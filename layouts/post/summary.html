@@ -6,7 +6,7 @@
     {{ if .Params.excerpt }}
         {{ .Params.excerpt }}
     {{ else }}
-            {{ .Summary }}
+        {{ .Summary }}
     {{ end }}
 </div>
 <div class="post-list__meta">{{ .Date.Format "Jan 2, 2006" }} • Read in {{ .ReadingTime }} Min

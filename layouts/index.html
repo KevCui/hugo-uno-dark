@@ -5,16 +5,13 @@
             <div class="content-wrapper__inner">
                 <section id="main">
                     <div>
-                        {{ range first 10 .Data.Pages }}
+                        {{ range (.Paginator 10).Pages }}
                             {{ if eq .Type "post" }}
                                 {{ .Render "summary"}}
                             {{ end }}
                         {{ end }}
                     </div>
-                    </br>
-                    <!--<h4>-->
-                        <!--<a href="{{ .Site.BaseURL }}/post/">Archive</a>-->
-                    <!--</h4>-->
+                    {{ partial "pagination.html" . }}
                 </section>
                 {{ partial "footer.html" . }}
             </div>

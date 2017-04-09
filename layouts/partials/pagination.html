@@ -1,0 +1,15 @@
+<nav class="pagination" role="navigation">
+{{ if .Paginator.HasPrev }}
+    {{ if (eq .Paginator.PageNumber 2) }}
+        <a class="new-posts pagination__newer btn btn-small btn-tertiary" href="/#blog"> Previous Page </a>
+    {{ else }}
+        <a class="new-posts pagination__newer btn btn-small btn-tertiary" href="{{ .Paginator.Prev.URL }}"> Previous Page </a>
+    {{ end }}
+{{ end }}
+{{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
+    <span class="pagination__page-number"> {{ .Paginator.PageNumber }} / {{ .Paginator.TotalPages }}</span>
+{{ end }}
+{{ if .Paginator.HasNext }}
+    <a class="order-posts pagination__older btn btn-small btn-tertiary" href="{{ .Paginator.Next.URL }}"> Next Page </a>
+{{ end }}
+</nav>
