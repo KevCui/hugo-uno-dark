@@ -20,7 +20,9 @@
           </div>
 
           <h1>{{ .Title }}</h1>
-          {{ .Content }}
+          <section id="post-content" class="article-content post">
+              {{ .Content }}
+          </section>
         </div>
         {{ partial "sharing.html" .}}
         {{ partial "comments.html" .}}
@@ -28,5 +30,6 @@
       </div>
     </div>
   </body>
+  {{ partial "toc.html" .}}
   {{ partial "script.html" .}}
 </html>
