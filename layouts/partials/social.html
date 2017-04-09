@@ -1,39 +1,37 @@
-<nav class="cover-navigation cover-navigation--primary">
-    <ul class="soc">
-        <li>
-            <a href="{{ .Site.BaseURL }}/#blog" title="My Blog" class="blog-button"><span class="label">Blog</span></a>
-        </li>
-        <!-- Twitter -->
-        {{ if .Site.Params.twitter }}
-        <li>
-            <a href="http://twitter.com/{{ .Site.Params.twitter }}" title="@{{ .Site.Params.twitter }} on Twitter" class="soc-twitter" target="_blank"><span class="label">Twitter</span></a>
-        </li> {{ end }}
-        
-        <!-- github -->
-        {{ if .Site.Params.github }}
-        <li>
-            <a href="https://github.com/{{ .Site.Params.github }}" title="{{ .Site.Params.github }} on github" class="soc-github" target="_blank"><span class="label">Github</span></a>
-        </li> {{ end }}
+<ul class="soc">
+    <li>
+        <a href="/#blog" title="My Blog" class="blog-button"><span class="label">Blog</span></a>
+    </li>
+    <!-- Twitter -->
+    {{ if .Site.Params.twitter }}
+    <li>
+        <a href="http://twitter.com/{{ .Site.Params.twitter }}" title="@{{ .Site.Params.twitter }} on Twitter" class="soc-twitter" target="_blank"><span class="label">Twitter</span></a>
+    </li> {{ end }}
+    
+    <!-- github -->
+    {{ if .Site.Params.github }}
+    <li>
+        <a href="https://github.com/{{ .Site.Params.github }}" title="{{ .Site.Params.github }} on github" class="soc-github" target="_blank"><span class="label">Github</span></a>
+    </li> {{ end }}
 
-        <!-- Medium -->
-        {{ if .Site.Params.medium }}
-        <li>
-            <a href="https://medium.com/{{ .Site.Params.medium }}" title="Medium" class="soc-medium" target="_blank"><span class="label">Medium</span></a>
-        </li> {{ end }}
+    <!-- Medium -->
+    {{ if .Site.Params.medium }}
+    <li>
+        <a href="https://medium.com/{{ .Site.Params.medium }}" title="Medium" class="soc-medium" target="_blank"><span class="label">Medium</span></a>
+    </li> {{ end }}
 
-        <!-- Xing -->
-        {{ if .Site.Params.xing }}
-        <li>
-            <a href="https://www.xing.com/profile/{{ .Site.Params.xing }}" title="Xing" class="soc-xing" target="_blank"><span class="label">Xing</span></a>
-        </li> {{ end }}
-        
-        <!-- Email -->
-        {{ if .Site.Params.email }}
-        <li>
-            <a href="mailto:{{ .Site.Params.email }}" title="Email {{ .Site.Params.email }}" class="soc-mail" target="_blank"><span class="label">Email</span></a>
-        </li> {{ end }}
-        <li>
-            <a href="{{ .Site.BaseURL }}/atom.xml" title="Subsribe" class="soc-rss soc-icon-last" target="_blank"><span class="label">RSS</span></a>
-        </li>
-    </ul>
-</nav>
+    <!-- Xing -->
+    {{ if .Site.Params.xing }}
+    <li>
+        <a href="https://www.xing.com/profile/{{ .Site.Params.xing }}" title="Xing" class="soc-xing" target="_blank"><span class="label">Xing</span></a>
+    </li> {{ end }}
+    
+    <!-- Email -->
+    {{ if .Site.Params.email }}
+    <li>
+        <a href="mailto:{{ .Site.Params.email }}" title="Email {{ .Site.Params.email }}" class="soc-mail" target="_blank"><span class="label">Email</span></a>
+    </li> {{ end }}
+    <li>
+        <a href="{{ .Site.BaseURL }}/atom.xml" title="Subsribe" class="soc-rss soc-icon-last" target="_blank"><span class="label">RSS</span></a>
+    </li>
+</ul>
