@@ -1,13 +1,21 @@
 <article class="post">
 <header>
-<h2><a href="{{ .Permalink }}">{{ .Title }} {{ if .Draft }}:: DRAFT{{end}}</a> </h2>
-<div class="post-meta">{{ .Date.Format "Mon, Jan 2, 2006" }} - Read in {{ .ReadingTime }} Min </div>
+<h2 class="post-list__post-title post-title"><a href="{{ .Permalink }}">{{ .Title }} {{ if .Draft }}:: DRAFT{{end}}</a> </h2>
 </header>
-<div class="summary">
+<div class="excerpt">
     {{ .Summary }}
 </div>
-<footer>
-<a href='{{ .Permalink }}'><nobr>Read more →</nobr></a>
-</footer>
+<div class="post-list__meta">{{ .Date.Format "Jan 2, 2006" }} • Read in {{ .ReadingTime }} Min 
+{{ if .Params.tags }}
+    • on tags: 
+    {{ range .Params.tags }}
+        <a href="/tags/{{ . | urlize }}">{{ . }}</a>
+    {{ end }}
+{{ end }}
+</div>
+<hr class="post-list__divider" />
+<!--<footer>-->
+<!--<a href='{{ .Permalink }}'><nobr>Read more →</nobr></a>-->
+<!--</footer>-->
 </article>
 {{ partial "script.html" .}}
