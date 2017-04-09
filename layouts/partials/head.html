@@ -56,9 +56,9 @@
 	   <meta itemprop="image" content="{{ .Params.image }}">
 	{{else}}
 		{{if .Site.Params.cover}}
-		   <meta property="og:image" content="{{ .Site.BaseURL }}{{.Site.Params.logo }}"/>
-		   <meta property="twitter:image" content="{{ .Site.BaseURL }}{{.Site.Params.logo }}"/>
-		   <meta itemprop="image" content="{{ .Site.BaseURL }}{{.Site.Params.logo }}">
+		   <meta property="og:image" content="{{ .Site.BaseURL }}/{{.Site.Params.logo }}"/>
+		   <meta property="twitter:image" content="{{ .Site.BaseURL }}/{{.Site.Params.logo }}"/>
+		   <meta itemprop="image" content="{{ .Site.BaseURL }}/{{.Site.Params.logo }}">
 		{{end}}
 	{{end}}
     <!-- Script -->
