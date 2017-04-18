@@ -11,8 +11,12 @@
               {{ end }}
               <span class="post-meta__tags tags">
                 <font class="tags">
-                {{ range .Params.tags }}
-                    <a href="/tags/{{ . | urlize }}">{{ . }}</a>
+				{{ range $index, $element := .Params.tags }}
+					{{ if eq (add $index 1) (len $.Params.tags) }}
+						<a href="/tags/{{ $element | urlize }}">{{ $element }}</a>
+					{{ else }}
+						<a href="/tags/{{ $element | urlize }}">{{ $element }},</a>
+					{{ end }}
                 {{ end }}
                 </font>
               </span>

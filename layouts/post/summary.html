@@ -12,8 +12,12 @@
 <div class="post-list__meta">{{ .Date.Format "Jan 2, 2006" }} • Read in {{ .ReadingTime }} Min
 {{ if .Params.tags }}
     • on tags:
-    {{ range .Params.tags }}
-        <a href="/tags/{{ . | urlize }}">{{ . }}</a>
+    {{ range $index, $element := .Params.tags }}
+        {{ if eq (add $index 1) (len $.Params.tags) }}
+            <a href="/tags/{{ $element | urlize }}">{{ $element }}</a>
+        {{ else }}
+            <a href="/tags/{{ $element | urlize }}">{{ $element }},</a>
+        {{ end }}
     {{ end }}
 {{ end }}
 </div>
