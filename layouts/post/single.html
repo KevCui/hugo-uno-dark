@@ -10,7 +10,6 @@
                   • on
               {{ end }}
               <span class="post-meta__tags tags">
-                <font class="tags">
 				{{ range $index, $element := .Params.tags }}
 					{{ if eq (add $index 1) (len $.Params.tags) }}
 						<a href="/tags/{{ $element | urlize }}">{{ $element }}</a>
@@ -18,7 +17,6 @@
 						<a href="/tags/{{ $element | urlize }}">{{ $element }},</a>
 					{{ end }}
                 {{ end }}
-                </font>
               </span>
               • {{ .FuzzyWordCount }} words {{ .ReadingTime }} min. read
           </div>

@@ -1,6 +1,6 @@
 <article class="post">
 <header>
-<h2 class="post-list__post-title post-title"><a href="{{ .Permalink }}">{{ .Title }} {{ if .Draft }}:: DRAFT{{end}}</a> </h2>
+<h2 class="post-list__post-title"><a class="hvr-bounce-to-right" href="{{ .Permalink }}">{{ .Title }} {{ if .Draft }}:: DRAFT{{end}}</a> </h2>
 </header>
 <div class="excerpt">
     {{ if .Params.excerpt }}
