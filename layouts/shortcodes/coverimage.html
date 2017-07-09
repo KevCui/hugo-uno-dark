@@ -1,0 +1,10 @@
+<p class="hidden">
+    <img src="{{ index .Params 0 }}" alt="coverimage"/>
+    {{ if index .Params 1 }}
+    <sup>
+        <em>
+            from <a href="{{ index .Params 2 }}">{{ index .Params 1 }}</a>
+        </em>
+    </sup>
+    {{ end }}
+</p>

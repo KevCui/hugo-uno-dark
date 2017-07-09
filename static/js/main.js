@@ -1,5 +1,12 @@
 $(document).ready(function() {
   $('body').removeClass('no-js');
+  $('.singlepost').addClass('animated fadeIn');
+
+  img = $('p img[alt="coverimage"]').attr('src');
+  if (typeof img != 'undefined') {
+    $('header').css("background-image", "url(" + img + ")");
+    $('p img[alt="coverimage"]').css('display', 'none').next('sup').css('display', 'none');
+  }
 
   $('a.blog-button').click(function() {
     if ($('.panel-cover').hasClass('panel-cover--collapsed')) return;
@@ -45,4 +52,5 @@ $(document).ready(function() {
     $('.navigation-wrapper').toggleClass('visible');
     $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeIn');
   });
+
 });

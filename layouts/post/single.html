@@ -3,7 +3,7 @@
     {{ partial "sidebar.html" . }}
     <div class="content-wrapper">
       <div class="content-wrapper__inner">
-        <div class="post">
+        <div class="post singlepost">
           <div class="post-meta">
               <span class="post-meta__date date">{{ .Date.Format "Jan 2, 2006" }}</span>
               {{ if .Params.tags }}
