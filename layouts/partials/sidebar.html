@@ -28,6 +28,9 @@
                         {{ partial "social.html" . }}
                     </nav>
                 </div>
+                {{ if eq .IsHome false }}
+                    <p><a class="main-button" href="/#blog">main</a></p>
+                {{ end }}
             </div>
         </div>
         <div class="panel-cover--overlay"></div>
@@ -59,6 +62,9 @@
                             {{ partial "social.html" . }}
                         </nav>
                     </div>
+                    {{ if eq .IsHome false }}
+                        <p><a class="main-button" href="/#blog">main</a></p>
+                    {{ end }}
                 </div>
             </div>
             <div class="panel-cover--overlay"></div>
