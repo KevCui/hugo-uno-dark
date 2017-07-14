@@ -3,7 +3,7 @@
             <i class="icon icon-list btn-mobile-menu__icon"></i>
             <i class="icon icon-x-circle btn-mobile-close__icon hidden"> </i>
             {{ if eq .IsHome false }}
-                <a class="mobile-top-right-button" href="/#blog">other posts</a>
+                <a class="mobile-top-right-button" href="/#blog">Other Posts</a>
             {{ else }}
                 <a class="mobile-top-right-button" href="{{ .Site.BaseURL }}/"  title="link to homepage for {{ .Site.Title }}">{{ .Site.Title }}</a>
             {{ end }}
@@ -13,7 +13,7 @@
         {{ if or (eq .URL "/post/") (in .URL "/tags/") (in .URL "/categories/") }}
             panel-cover panel-cover--collapsed
         {{ else }}
-                panel-cover
+            panel-cover
         {{ end }}
         {{ else }}
             panel-cover panel-cover--collapsed
@@ -27,6 +27,7 @@
                 </h1>
                 <hr class="panel-cover__divider" />
                 <p class="panel-cover__description"> {{ if .Site.Params.description }} {{ .Site.Params.description }} {{end}} </p>
+                <p class="panel-cover__mobile-blog"><a title="my blog" class="blog-button" href="/#blog">blog</a></p>
                 <hr class="panel-cover__divider panel-cover__divider--secondary" />
                 <div class="navigation-wrapper">
                     <nav class="cover-navigation cover-navigation--primary">
