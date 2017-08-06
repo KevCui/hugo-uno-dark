@@ -22,26 +22,26 @@
                 {{ if eq .Params.contact true }}
                 <div id="contactDetails" class="quickFade delayFour">
                     <ul>
-                        {{ if .Site.Params.author }}
+                        {{ if and (.Site.Params.author) (ne .Params.author false) }}
                         <li><img class="contactIcon" src="/images/contact/user.svg"/><a href="{{ .Site.BaseURL }}">{{ .Site.Params.author }}</a></li>
                         {{ end }}
-                        {{ if .Site.Params.twitter }}
+                        {{ if and (.Site.Params.twitter) (ne .Params.twitter false) }}
                         <li><img class="contactIcon" src="/images/contact/twitter.svg"/><a href="https://twitter.com/{{ .Site.Params.twitter }}">{{ .Site.Params.twitter }}</a></li>
                         {{ end }}
-                        {{ if .Site.Params.github }}
+                        {{ if and (.Site.Params.github) (ne .Params.github false) }}
                         <li><img class="contactIcon" src="/images/contact/github.svg"/><a href="https://github.com/{{ .Site.Params.github }}">{{ .Site.Params.github }}</a></li>
                         {{ end }}
-                        {{ if .Site.Params.phone }}
+                        {{ if and (.Site.Params.phone) (ne .Params.phone false) }}
                         <li><img class="contactIcon" src="/images/contact/phone.svg"/>{{ .Site.Params.phone }}</li>
                         {{ end }}
-                        {{ if .Site.Params.email }}
+                        {{ if and (.Site.Params.email) (ne .Params.email false) }}
                         <li><img class="contactIcon" src="/images/contact/mail.svg"/><a href="mailto:{{ .Site.Params.email }}" target="_blank">{{ .Site.Params.email }}</a></li>
                         {{ end }}
-                        {{ if .Site.Params.address }}
-                        <li><img class="contactIcon" src="/images/contact/address.svg"/>{{ .Site.Params.address }}</li>
+                        {{ if and (.Site.Params.address) (ne .Params.address false) }}
+                        <li><img class="contactIcon" src="/images/contact/pin.svg"/>{{ .Site.Params.address }}</li>
                         {{ end }}
-                        {{ if .Site.Params.cv }}
-                        <li><img class="contactIcon" src="/images/contact/paperclip.svg"/><a src="{{.Site.BaseURL }}/{{ .Site.Params.cv }}">CV (PDF version)</a></li>
+                        {{ if and (.Site.Params.cv) (ne .Params.cv false) }}
+                        <li><img class="contactIcon" src="/images/contact/paperclip.svg"/><a href="{{.Site.BaseURL }}/{{ .Site.Params.cv }}">CV (PDF version)</a></li>
                         {{ end }}
                     </ul>
                 </div>
