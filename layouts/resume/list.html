@@ -41,7 +41,7 @@
                         <li><img class="contactIcon" src="/images/contact/pin.svg"/>{{ .Site.Params.address }}</li>
                         {{ end }}
                         {{ if and (.Site.Params.cv) (ne .Params.cv false) }}
-                        <li><img class="contactIcon" src="/images/contact/paperclip.svg"/><a href="{{.Site.BaseURL }}/{{ .Site.Params.cv }}">CV (PDF version)</a></li>
+                        <li><img class="contactIcon" src="/images/contact/paperclip.svg"/><a href="{{ .Site.Params.cv }}">CV (PDF version)</a></li>
                         {{ end }}
                     </ul>
                 </div>

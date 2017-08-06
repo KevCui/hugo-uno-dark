@@ -34,4 +34,7 @@
     <li>
         <a href="{{ .Site.BaseURL }}/index.xml" title="Subsribe" class="soc-rss soc-icon-last" target="_blank"><span class="label">RSS</span></a>
     </li>
+    {{ if .Site.Params.resume }}
+        <p><a class="resume-button" href={{ .Site.Params.resume }}>résumé</a></p>
+    {{ end }}
 </ul>

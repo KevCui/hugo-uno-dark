@@ -35,7 +35,10 @@
                     </nav>
                 </div>
                 {{ if eq .IsHome false }}
-                    <p><a class="main-button" href="/#blog">main</a></p>
+                    {{ if .Site.Params.resume }}
+                    <p><a class="main-button" href="{{ .Site.Params.resume }}">my résumé</a></p>
+                    {{ end }}
+                    <p><a class="main-button" href="/#blog">all posts</a></p>
                 {{ end }}
             </div>
         </div>
@@ -69,7 +72,7 @@
                         </nav>
                     </div>
                     {{ if eq .IsHome false }}
-                        <p><a class="main-button" href="/#blog">main</a></p>
+                        <p><a class="main-button" href="/#blog">all posts</a></p>
                     {{ end }}
                 </div>
             </div>
