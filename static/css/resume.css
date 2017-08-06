@@ -20,13 +20,13 @@ p {
 }
 
 #cv {
-    width: 90%;
+    width: 100%;
 	background: #f3f3f3;
     margin-bottom: 100px;
 }
 
 .mainDetails {
-    padding: 0 30px;
+    padding: 0 10px;
 }
 
 #name h1 {
@@ -43,7 +43,7 @@ p {
 }
 
 #mainArea {
-	padding: 0 30px;
+	padding: 0 10px;
 }
 
 #name {
@@ -51,7 +51,7 @@ p {
 }
 
 #contactDetails {
-    padding-right: 30px;
+    padding-right: 10px;
     float: none;
 }
 
@@ -113,12 +113,12 @@ section:last-child {
 	font-family: 'Raleway', serif;
 	font-size: 1.5em;
 	color: black;
-    margin-top: 23px;
+    margin-top: 15px;
 }
 
 .sectionContent h2 {
 	font-family: 'Raleway', serif;
-	font-size: 1.5em;
+	font-size: 1.2em;
     font-weight: 500;
 	margin-bottom: -2px;
 }
@@ -140,7 +140,7 @@ section:last-child {
 	font-size: 0.8em;
 	font-style: italic;
     margin-top: -9px;
-	margin-bottom: 12px;
+	margin-bottom: 9px;
 }
 
 .keySkills {
@@ -149,12 +149,22 @@ section:last-child {
 	-webkit-column-count:3;
 	column-count:3;
 	margin-bottom: 20px;
-	font-size: 1em;
+	font-size: 0.9em;
 	color: #444;
 }
 
 .keySkills ul li {
 	margin-bottom: 3px;
+}
+
+.ul-memo {
+    list-style-type: square;
+    margin: 0 0 20px 20px;
+}
+
+.ul-memo li {
+    font-size: 0.9em;
+    margin: 0; 
 }
 
 @media all and (max-width: 1300px) {
@@ -188,7 +198,7 @@ section:last-child {
 
 @media all and (max-width: 960px) {
 	.mainDetails {
-		padding: 15px 15px;
+		padding: 0px;
 	}
 
 	section {
@@ -196,7 +206,7 @@ section:last-child {
 	}
 
 	#mainArea {
-		padding: 0 25px;
+		padding: 0 10px;
 	}
 
 	/*.keySkills {*/

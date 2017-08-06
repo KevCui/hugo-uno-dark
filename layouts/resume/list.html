@@ -83,9 +83,13 @@
                         {{ range sort .Params.experience }}
                             <article>
                                 <h2>{{ .title }}</h2>
-                                <p class="subDetails-name"><a href={{ .web }}>{{ .name }}</a></p>
+                                <p class="subDetails-name"><a href="{{ .web }}">{{ .name }}</a></p>
                                 <p class="subDetails-date">{{ .date }}, {{ .location }}</p>
-                                <p>{{ .memo }}</p>
+                                <ul class="ul-memo">
+                                {{ range $i, $m := .memo }}
+                                    <li>{{ $m }}</li>
+                                {{ end }}
+                                </ul>
                             </article>
                         {{ end }}
                     </div>
@@ -120,7 +124,11 @@
                                 <h2>{{ .title }}</h2>
                                 <p class="subDetails-name"><a href={{ .web }}>{{ .name }}</a></p>
                                 <p class="subDetails-date">{{ .date }}, {{ .location }}</p>
-                                <p>{{ .memo }}</p>
+                                <ul class="ul-memo">
+                                {{ range $i, $m := .memo }}
+                                    <li>{{ $m }}</li>
+                                {{ end }}
+                                </ul>
                             </article>
                         {{ end }}
                     <div class="clear"></div>
