@@ -1,0 +1,142 @@
+  {{ partial "head.html" . }}
+  <script src="{{ .Site.BaseURL }}/js/jspdf.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/resume.min.css">
+  <body>
+    {{ partial "sidebar.html" . }}
+    <div class="content-wrapper">
+      <div class="content-wrapper__inner">
+        <!--<div class="post singlepost">-->
+          <!--<h1>{{ .Title }}</h1>-->
+          <!--<section id="post-content" class="article-content post">-->
+              <!--{{ .Content }}-->
+          <!--</section>-->
+        <div id="cv" class="instaFade">
+            <div class="mainDetails">
+                <!--<div id="headshot" class="quickFade">-->
+                    <!--<img src="headshot.jpg" alt="Kevin Cui" />-->
+                <!--</div>-->
+                <div id="name">
+                    <h1 class="quickFade delayTwo">{{ .Params.title }}</h1>
+                    <h2 class="quickFade delayThree"></h2>
+                </div>
+
+                {{ if eq .Params.contact true }}
+                <div id="contactDetails" class="quickFade delayFour">
+                    <ul>
+                        {{ if .Site.Params.author }}
+                        <li><img class="contactIcon" src="/images/contact/user.svg"/><a href="{{ .Site.BaseURL }}">{{ .Site.Params.author }}</a></li>
+                        {{ end }}
+                        {{ if .Site.Params.twitter }}
+                        <li><img class="contactIcon" src="/images/contact/twitter.svg"/><a href="https://twitter.com/{{ .Site.Params.twitter }}">{{ .Site.Params.twitter }}</a></li>
+                        {{ end }}
+                        {{ if .Site.Params.github }}
+                        <li><img class="contactIcon" src="/images/contact/github.svg"/><a href="https://github.com/{{ .Site.Params.github }}">{{ .Site.Params.github }}</a></li>
+                        {{ end }}
+                        {{ if .Site.Params.phone }}
+                        <li><img class="contactIcon" src="/images/contact/phone.svg"/>{{ .Site.Params.phone }}</li>
+                        {{ end }}
+                        {{ if .Site.Params.email }}
+                        <li><img class="contactIcon" src="/images/contact/mail.svg"/><a href="mailto:{{ .Site.Params.email }}" target="_blank">{{ .Site.Params.email }}</a></li>
+                        {{ end }}
+                        {{ if .Site.Params.address }}
+                        <li><img class="contactIcon" src="/images/contact/address.svg"/>{{ .Site.Params.address }}</li>
+                        {{ end }}
+                        {{ if .Site.Params.cv }}
+                        <li><img class="contactIcon" src="/images/contact/paperclip.svg"/><a src="{{.Site.BaseURL }}/{{ .Site.Params.cv }}">CV (PDF version)</a></li>
+                        {{ end }}
+                    </ul>
+                </div>
+                {{ end }}
+                <div class="clear"></div>
+            </div>
+
+            <div id="mainArea" class="quickFade delayFive">
+                <section>
+                    <p>{{ .Content }}</p>
+                    <div class="clear"></div>
+                </section>
+
+                {{ if .Params.language }}
+                <section>
+                    <div class="sectionTitle">
+                        <h1>🙊 lang.</h1>
+                    </div>
+
+                    <div class="sectionContent">
+                        {{ range sort .Params.language }}
+                            <article>
+                                <h2>{{ .language }}</h2>
+                                <p>{{ .type }}</p>
+                            </article>
+                        {{ end }}
+                    </div>
+                    <div class="clear"></div>
+                </section>
+                {{ end }}
+
+                {{ if .Params.experience }}
+                <section>
+                    <div class="sectionTitle">
+                        <h1>💻 exp.</h1>
+                    </div>
+
+                    <div class="sectionContent">
+                        {{ range sort .Params.experience }}
+                            <article>
+                                <h2>{{ .title }}</h2>
+                                <p class="subDetails-name"><a href={{ .web }}>{{ .name }}</a></p>
+                                <p class="subDetails-date">{{ .date }}, {{ .location }}</p>
+                                <p>{{ .memo }}</p>
+                            </article>
+                        {{ end }}
+                    </div>
+                    <div class="clear"></div>
+                </section>
+                {{ end }}
+
+                {{ if .Params.skill }}
+                <section>
+                    <div class="sectionTitle">
+                        <h1>Skills</h1>
+                    </div>
+
+                    <div class="sectionContent">
+                        <ul class="keySkills">
+                            <li>A Key Skill</li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </section>
+                {{ end }}
+
+                {{ if .Params.education }}
+                <section>
+                    <div class="sectionTitle">
+                        <h1>🎓 edu.</h1>
+                    </div>
+
+                    <div class="sectionContent">
+                        {{ range sort .Params.education }}
+                            <article>
+                                <h2>{{ .title }}</h2>
+                                <p class="subDetails-name"><a href={{ .web }}>{{ .name }}</a></p>
+                                <p class="subDetails-date">{{ .date }}, {{ .location }}</p>
+                                <p>{{ .memo }}</p>
+                            </article>
+                        {{ end }}
+                    <div class="clear"></div>
+                </section>
+                {{ end }}
+
+            </div>
+        </div>
+
+        <!--</div>-->
+      </div>
+      <!--{{ partial "footer.html" .}}-->
+    </div>
+  </body>
+  {{ partial "toc.html" .}}
+  {{ partial "script.html" .}}
+</html>
+
