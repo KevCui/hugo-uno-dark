@@ -15,12 +15,12 @@
                     <!--<img src="headshot.jpg" alt="Kevin Cui" />-->
                 <!--</div>-->
                 <div id="name">
-                    <h1 class="quickFade delayTwo">{{ .Params.title }}</h1>
-                    <h2 class="quickFade delayThree"></h2>
+                    <h1>{{ .Params.title }}</h1>
+                    <h2></h2>
                 </div>
 
                 {{ if eq .Params.contact true }}
-                <div id="contactDetails" class="quickFade delayFour">
+                <div id="contactDetails">
                     <ul>
                         {{ if and (.Site.Params.author) (ne .Params.author false) }}
                         <li><img class="contactIcon" src="/images/contact/user.svg"/><a href="{{ .Site.BaseURL }}">{{ .Site.Params.author }}</a></li>
@@ -49,7 +49,7 @@
                 <div class="clear"></div>
             </div>
 
-            <div id="mainArea" class="quickFade delayFive">
+            <div id="mainArea">
                 <section>
                     <p>{{ .Content }}</p>
                     <div class="clear"></div>
