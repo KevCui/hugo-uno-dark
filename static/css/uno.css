@@ -1818,6 +1818,10 @@ input[type="tel"] {
     margin-bottom: 0px !important;
   }
 
+  p {
+    line-height: 1.8;
+  }
+
   .swirl {
     height: 30px; }
 
