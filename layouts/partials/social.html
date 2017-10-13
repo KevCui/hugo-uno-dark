@@ -1,38 +1,44 @@
 <ul class="soc">
     <li>
-        <a href="/#blog" title="My Blog" id="blog-button" class="blog-button"><span class="label">Blog</span></a>
+        <a href="/#blog" title="My Blog" id="blog-button" class="blog-button"><span class="soc soc-blogger"></span></a>
     </li>
     <!-- Twitter -->
     {{ if .Site.Params.twitter }}
     <li>
-        <a href="http://twitter.com/{{ .Site.Params.twitter }}" title="@{{ .Site.Params.twitter }} on Twitter" class="soc-twitter" target="_blank"><span class="label">Twitter</span></a>
+        <a href="http://twitter.com/{{ .Site.Params.twitter }}" title="{{ .Site.Params.twitter }} on Twitter" target="_blank"><span class="soc soc-twitter"></span></a>
     </li> {{ end }}
     
     <!-- github -->
     {{ if .Site.Params.github }}
     <li>
-        <a href="https://github.com/{{ .Site.Params.github }}" title="{{ .Site.Params.github }} on github" class="soc-github" target="_blank"><span class="label">Github</span></a>
+        <a href="https://github.com/{{ .Site.Params.github }}" title="{{ .Site.Params.github }} on github" target="_blank"><span class="soc soc-github"></span></a>
     </li> {{ end }}
 
     <!-- Medium -->
     {{ if .Site.Params.medium }}
     <li>
-        <a href="https://medium.com/{{ .Site.Params.medium }}" title="Medium" class="soc-medium" target="_blank"><span class="label">Medium</span></a>
+        <a href="https://medium.com/{{ .Site.Params.medium }}" title="Medium" target="_blank"><span class="soc soc-medium"></span></a>
     </li> {{ end }}
 
+    <!-- Unsplash -->
+    {{ if .Site.Params.unsplash }}
+    <li>
+        <a href="https://unsplash.com/{{ .Site.Params.unsplash }}" title="Unsplash" target="_blank"><span class="soc soc-unsplash"></span></a>
+
+    </li> {{ end }}
     <!-- Xing -->
     {{ if .Site.Params.xing }}
     <li>
-        <a href="https://www.xing.com/profile/{{ .Site.Params.xing }}" title="Xing" class="soc-xing" target="_blank"><span class="label">Xing</span></a>
+        <a href="https://www.xing.com/profile/{{ .Site.Params.xing }}" title="Xing" target="_blank"><span class="soc soc-xing"></span></a>
     </li> {{ end }}
     
     <!-- Email -->
     {{ if .Site.Params.email }}
     <li>
-        <a href="mailto:{{ .Site.Params.email }}" title="Email {{ .Site.Params.email }}" class="soc-mail" target="_blank"><span class="label">Email</span></a>
+        <a href="mailto:{{ .Site.Params.email }}" title="Email {{ .Site.Params.email }}" target="_blank"><span class="soc soc-mail"></span></a>
     </li> {{ end }}
     <li>
-        <a href="{{ .Site.BaseURL }}/index.xml" title="Subsribe" class="soc-rss soc-icon-last" target="_blank"><span class="label">RSS</span></a>
+        <a href="{{ .Site.BaseURL }}/index.xml" title="Subsribe" target="_blank"><span class="soc soc-rss"></span></a>
     </li>
     {{ if .Site.Params.resume }}
         <p><a class="resume-button" href={{ .Site.Params.resume }}>résumé</a></p>
