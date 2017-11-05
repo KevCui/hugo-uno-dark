@@ -4,16 +4,8 @@
     {{ partial "sidebar.html" . }}
     <div class="content-wrapper">
       <div class="content-wrapper__inner">
-        <!--<div class="post singlepost">-->
-          <!--<h1>{{ .Title }}</h1>-->
-          <!--<section id="post-content" class="article-content post">-->
-              <!--{{ .Content }}-->
-          <!--</section>-->
         <div id="cv" class="instaFade">
             <div class="mainDetails">
-                <!--<div id="headshot" class="quickFade">-->
-                    <!--<img src="headshot.jpg" alt="Kevin Cui" />-->
-                <!--</div>-->
                 <div id="name">
                     <h1>{{ .Params.title }}</h1>
                     <h2></h2>
@@ -145,5 +137,10 @@
   </body>
   {{ partial "toc.html" .}}
   {{ partial "script.html" .}}
+  <style>
+  #sidebar-toc-Ik4D-toggleBtn {
+    visibility: hidden;
+  }
+  </style>
 </html>
 
