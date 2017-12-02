@@ -27,7 +27,7 @@
                         <li><img class="contactIcon" src="/images/contact/phone-white.svg"/>{{ .Site.Params.phone }}</li>
                         {{ end }}
                         {{ if and (.Site.Params.email) (ne .Params.email false) }}
-                        <li><img class="contactIcon" src="/images/contact/mail-white.svg"/><a href="mailto:{{ .Site.Params.email }}" target="_blank">{{ .Site.Params.email }}</a></li>
+                        <li><img class="contactIcon" src="/images/contact/mail-white.svg"/><a href="mailto:{{ .Site.Params.email }}" target="_blank" rel="noopener">{{ .Site.Params.email }}</a></li>
                         {{ end }}
                         {{ if and (.Site.Params.address) (ne .Params.address false) }}
                         <li><img class="contactIcon" src="/images/contact/pin-white.svg"/>{{ .Site.Params.address }}</li>

@@ -2,40 +2,40 @@
     <!-- Twitter -->
     {{ if .Site.Params.twitter }}
     <li>
-        <a href="http://twitter.com/{{ .Site.Params.twitter }}" title="{{ .Site.Params.twitter }} on Twitter" target="_blank"><span class="soc soc-twitter"></span></a>
+        <a href="http://twitter.com/{{ .Site.Params.twitter }}" title="{{ .Site.Params.twitter }} on Twitter" target="_blank" rel="noopener"><span class="soc soc-twitter"></span></a>
     </li> {{ end }}
     
     <!-- github -->
     {{ if .Site.Params.github }}
     <li>
-        <a href="https://github.com/{{ .Site.Params.github }}" title="{{ .Site.Params.github }} on github" target="_blank"><span class="soc soc-github"></span></a>
+        <a href="https://github.com/{{ .Site.Params.github }}" title="{{ .Site.Params.github }} on github" target="_blank" rel="noopener"><span class="soc soc-github"></span></a>
     </li> {{ end }}
 
     <!-- Medium -->
     {{ if .Site.Params.medium }}
     <li>
-        <a href="https://medium.com/{{ .Site.Params.medium }}" title="Medium" target="_blank"><span class="soc soc-medium"></span></a>
+        <a href="https://medium.com/{{ .Site.Params.medium }}" title="Medium" target="_blank" rel="noopener"><span class="soc soc-medium"></span></a>
     </li> {{ end }}
 
     <!-- Unsplash -->
     {{ if .Site.Params.unsplash }}
     <li>
-        <a href="https://unsplash.com/{{ .Site.Params.unsplash }}" title="Unsplash" target="_blank"><span class="soc soc-unsplash"></span></a>
+        <a href="https://unsplash.com/{{ .Site.Params.unsplash }}" title="Unsplash" target="_blank" rel="noopener"><span class="soc soc-unsplash"></span></a>
 
     </li> {{ end }}
     <!-- Xing -->
     {{ if .Site.Params.xing }}
     <li>
-        <a href="https://www.xing.com/profile/{{ .Site.Params.xing }}" title="Xing" target="_blank"><span class="soc soc-xing"></span></a>
+        <a href="https://www.xing.com/profile/{{ .Site.Params.xing }}" title="Xing" target="_blank" rel="noopener"><span class="soc soc-xing"></span></a>
     </li> {{ end }}
     
     <!-- Email -->
     {{ if .Site.Params.email }}
     <li>
-        <a href="mailto:{{ .Site.Params.email }}" title="Email {{ .Site.Params.email }}" target="_blank"><span class="soc soc-mail"></span></a>
+        <a href="mailto:{{ .Site.Params.email }}" title="Email {{ .Site.Params.email }}" target="_blank" rel="noopener"><span class="soc soc-mail"></span></a>
     </li> {{ end }}
     <li>
-        <a href="{{ .Site.BaseURL }}/index.xml" title="Subsribe" target="_blank"><span class="soc soc-rss"></span></a>
+        <a href="{{ .Site.BaseURL }}/index.xml" title="Subsribe" target="_blank" rel="noopener"><span class="soc soc-rss"></span></a>
     </li>
     {{ if .Site.Params.resume }}
         <p><a class="resume-button" href={{ .Site.Params.resume }}>résumé</a></p>
