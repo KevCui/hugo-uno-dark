@@ -2,9 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="theme-color" content="#000"/>
     <!-- Enable responsiveness on mobile devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
     <title> {{ .Site.Title }} </title>
+    <!--PWA-->
+    <link rel="manifest" href="/manifest.json">
     <!-- Icons -->
     <link rel="apple-touch-icon" sizes="57x57" href="{{ .Site.BaseURL }}/images/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="{{ .Site.BaseURL }}/images/favicons/apple-icon-60x60.png">
@@ -63,11 +66,22 @@
     <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/font.min.css" />
     <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/animate.min.css" />
     <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/share.min.css" />
-    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/monokai.min.css">
     <!-- Script -->
     <script src="{{ .Site.BaseURL }}/js/jquery.min.js"></script>
     <script src="{{ .Site.BaseURL }}/js/main.min.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {  
+            navigator.serviceWorker.register('./sw.js')
+            .then(function(registration) {
+                console.log("Service Worker Registered", registration);
+            })
+            .catch(function(err) {
+                console.log("Service Worker Failed to Register", err);
+            })
+        }
+    </script>
     {{ if .Params.highlight }}
+        <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/monokai.min.css">
         <script src="{{ .Site.BaseURL }}/js/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
     {{ end }}
