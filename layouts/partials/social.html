@@ -4,7 +4,7 @@
     <li>
         <a href="http://twitter.com/{{ .Site.Params.twitter }}" title="{{ .Site.Params.twitter }} on Twitter" target="_blank" rel="noopener"><span class="soc soc-twitter"></span></a>
     </li> {{ end }}
-    
+
     <!-- github -->
     {{ if .Site.Params.github }}
     <li>
@@ -15,6 +15,13 @@
     {{ if .Site.Params.medium }}
     <li>
         <a href="https://medium.com/{{ .Site.Params.medium }}" title="Medium" target="_blank" rel="noopener"><span class="soc soc-medium"></span></a>
+    </li> {{ end }}
+
+    <!-- Flickr -->
+    {{ if .Site.Params.flickr }}
+    <li>
+        <a href="https://www.flickr.com/people/{{ .Site.Params.flickr }}" title="flickr" target="_blank" rel="noopener"><span class="soc soc-flickr"></span></a>
+
     </li> {{ end }}
 
     <!-- Unsplash -->
@@ -28,7 +35,7 @@
     <li>
         <a href="https://www.xing.com/profile/{{ .Site.Params.xing }}" title="Xing" target="_blank" rel="noopener"><span class="soc soc-xing"></span></a>
     </li> {{ end }}
-    
+
     <!-- Email -->
     {{ if .Site.Params.email }}
     <li>
