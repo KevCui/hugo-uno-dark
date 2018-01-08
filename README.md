@@ -3,4 +3,4 @@ hugo-uno-dark
 
 The dark side of uno, a responsive hugo theme based on [hugo-uno](https://github.com/fredrikloch/hugo-uno).
 
-How this theme looks like? Check [my blog](https://krazycavin/github.io)
+How dose this theme look like? Check [my blog](https://krazycavin.github.io)
