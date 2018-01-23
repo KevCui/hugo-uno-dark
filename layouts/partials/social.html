@@ -21,15 +21,20 @@
     {{ if .Site.Params.flickr }}
     <li>
         <a href="https://www.flickr.com/people/{{ .Site.Params.flickr }}" title="flickr" target="_blank" rel="noopener"><span class="soc soc-flickr"></span></a>
+    </li> {{ end }}
 
+    <!-- 500px -->
+    {{ if .Site.Params.fivehundredpx }}
+    <li>
+        <a href="https://www.500px.com/{{ .Site.Params.fivehundredpx }}" title="500px" target="_blank" rel="noopener"><span class="soc soc-unsplash"></span></a>
     </li> {{ end }}
 
     <!-- Unsplash -->
     {{ if .Site.Params.unsplash }}
     <li>
         <a href="https://unsplash.com/{{ .Site.Params.unsplash }}" title="Unsplash" target="_blank" rel="noopener"><span class="soc soc-unsplash"></span></a>
-
     </li> {{ end }}
+
     <!-- Xing -->
     {{ if .Site.Params.xing }}
     <li>

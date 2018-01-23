@@ -2096,6 +2096,9 @@ pre {
 .soc-unsplash:before {
     content:'\e914';
 }
+.soc-500px:before {
+    content:'\e000';
+}
 .soc-flickr:before {
     content:'\e02d';
 }
