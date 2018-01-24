@@ -35,6 +35,12 @@
         <a href="https://unsplash.com/{{ .Site.Params.unsplash }}" title="Unsplash" target="_blank" rel="noopener"><span class="soc soc-unsplash"></span></a>
     </li> {{ end }}
 
+    <!-- instagram -->
+    {{ if .Site.Params.instagram }}
+    <li>
+        <a href="https://instagram.com/{{ .Site.Params.instagram }}" title="Instagram" target="_blank" rel="noopener"><span class="soc soc-instagram"></span></a>
+    </li> {{ end }}
+
     <!-- Xing -->
     {{ if .Site.Params.xing }}
     <li>

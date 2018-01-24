@@ -2093,6 +2093,9 @@ pre {
 .soc-medium:before {
     content:'\e051';
 }
+.soc-instagram:before {
+    content:'\e044';
+}
 .soc-unsplash:before {
     content:'\e914';
 }
