@@ -7,12 +7,12 @@ How dose this theme look like? Check [my blog](https://krazycavin.github.io)
 
 ### How to enable resume page?
 
-To enable the access to resume page, it needs to put the path of resume in config.toml:
+To enable the access to resume page, it needs to put the path of resume in **config.toml**:
 ```
 resume = "/resume"
 
 ```
-In this case, the path to get resume content is **<hugo-root>/content/resume/**.
+In this case, the path to put resume content is **content/resume/**
 
 Then create **resume** folder and put **_index.md** file in it. An example of **_index.md** file can be found in **example** folder.
 
@@ -65,11 +65,11 @@ language:
 
 Multiple **experience** (exp1, exp2...), **education** (edu1, edu2...) and **language** (lang1, lang2...) are supported.
 
-**introduction** part will be displayed above experience part.
+**introduction** part will be rendered and displayed above experience part.
 
 ### What's the format of config.toml?
 
-This config.toml should be  placed in <hugo-root> folder. An example **config.toml** can be found in **example** folder.
+This config.toml should be placed in hugo root folder. An example of **config.toml** can be found in **example** folder.
 
 ```
 languageCode = "en-us"
