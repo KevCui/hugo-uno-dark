@@ -1,0 +1,32 @@
+languageCode = "en-us"
+title = "Bruce Wayne"
+baseURL = ""
+enableEmoji = true
+MetaDataFormat = "yaml"
+
+[permalinks]
+  post= "/:year/:month/:day/:filename/"
+
+[indexes]
+  category = "categories"
+  tag = "tags"
+
+[Params]
+  author = "Bruce Wayne"
+  github = "batman"
+  twitter = "@batman"
+  email = "batman@bat.man"
+  logo = "/images/profile.jpg"
+  cover = "/images/sky.jpg"
+  resume = "/resume"
+  description = "crazy batman"
+  address = "Wayne Manor, Gotham City"
+#  cv = "/resume/batman.pdf"
+#  medium = ""
+#  instagram = ""
+#  analytics = ""
+#  unsplash = ""
+#  xing = ""
+#  flickr = ""
+#  fivehundredpx = ""
+#  disqus = ""
