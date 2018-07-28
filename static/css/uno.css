@@ -1207,6 +1207,7 @@ h2 {
 h3 {
   font-weight: bold;
   padding: 0.3em 0em 0.3em 0.5em;
+  margin-bottom: .8em;
   border-left: 15px solid #3f3f3f;
   font-size: 1.6em; }
 
