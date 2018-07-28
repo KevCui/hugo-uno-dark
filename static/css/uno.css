@@ -1260,21 +1260,11 @@ ol {
 ul {
   list-style-type: disc; }
 
-.highlight {
-  /*background-color: #f8f8f8;*/
-  color: #ea3f6a;
-  border: none;
-  word-wrap: break-word;
-  border-radius: 3px;
-  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-  padding: 20px !important;
-  margin-bottom: 20px;
-}
-
 code {
-  color: #ea3f6a;
+  color: #fb660a;
+  word-wrap: break-word;
+  border-radius: 5px;
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-  padding: 3px !important;
 }
 
 sup {
@@ -2020,13 +2010,6 @@ th, td {
   border: 1px solid #aaa;
   padding: 5px 10px;
   text-align: left;
-}
-
-.highlight table {
-  border: none;
-}
-pre {
-  overflow: auto;
 }
 
 .soc {
