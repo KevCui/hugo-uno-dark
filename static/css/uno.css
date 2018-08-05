@@ -1223,15 +1223,16 @@ p {
   line-height: 1.5; }
 
 strong {
-  color: #fff;
+  color: #c7c9d1;
   font-weight: bold; }
 
 em {
-  color: #fff;
+  color: ##74778c;
+  font-weight: lighter;
   font-style: italic; }
 
 blockquote {
-  color: #fff;
+  color: #c7c9d1;
   font-family: "Raleway", serif;
   margin: 1em 0;
   padding: 1em 0;
@@ -2051,12 +2052,7 @@ th, td {
     line-height: 42px;
     font-size: 20px;
     margin-right: 10px;
-    color: #ffffff;
-    /*-webkit-border-radius: 100px;*/
-    /*-moz-border-radius: 100px;*/
-    /*border-radius: 100px;*/
-    /*background-color: #000000;*/
-	/*border: 2px solid #fff;*/
+    color: #c7c9d1;
 }
 
 .soc a:hover {
