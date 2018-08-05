@@ -4,9 +4,8 @@ $(document).ready(function() {
   img = $('p img[alt="coverimage"]').attr('src');
   if (typeof img != 'undefined') {
     if (screen.width > 960) {
-      $('header').css("background-color", "#131313"); // shoud be #151515 weird
       $('header').css("background-image", "");
-      $('.panel-cover--overlay').fadeOut(500);
+      $('.panel-cover--overlay').fadeOut(200);
     } else {
       $('header').css("background-image", "url(" + img + ")");
       $('p img[alt="coverimage"]').css('display', 'none').next('sup').css('display', 'none')
