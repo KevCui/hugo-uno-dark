@@ -1073,7 +1073,7 @@ body {
   font-weight: 400;
   font-size: 1em;
   line-height: 1.2;
-  color: #a1a1a1;
+  color: #c7c9d1;
   width: 100%; }
 
 ::selection {
@@ -1084,11 +1084,11 @@ body {
 
 a {
   text-decoration: none;
-  color: #a1a1a1; }
+  color: #c7c9d1; }
 
 li > a,
 section > p > a {
-  text-decoration: underline; }
+  color: #859fc8; }
 
 article > div > a,
 span > a,
@@ -1112,7 +1112,7 @@ p > a:before {
   left: 0;
   right: 100%;
   bottom: 0;
-  background: #a1a1a1 ;
+  background: #c7c9d1 ;
   height: 1px;
   -webkit-transition-property: right;
   transition-property: right;
@@ -1275,12 +1275,12 @@ sup {
 .author,
 .tags {
   font-size: .9em;
-  color: #a5a5af;}
+  color: #74778c;}
   .date a,
   .time a,
   .author a,
   .tags a {
-    color: #a1a1a1; }
+    color: #859fc8; }
 
 .excerpt {
   margin: 1em 0 0 0;
@@ -1310,7 +1310,7 @@ sup {
   position: relative;
   display: inline-block;
   padding: 8px 18px 9px 18px;
-  background: #a1a1a1;
+  background: #c7c9d1;
   border-radius: 3px;
   text-align: center;
   color: #FFF; }
@@ -1372,7 +1372,7 @@ hr {
 
 .post-meta {
   margin: 0 0 .4em 0;
-  color: #a5a5af; }
+  color: #74778c; }
 
 .post-meta__date {
   margin-right: .5em; }
@@ -1693,11 +1693,11 @@ i {
   display: block;
   margin: 1em 0 0 0;
   font-size: .9em;
-  color: #a5a5af; }
+  color: #74778c; }
 
 .post-list__meta--date {
   margin-right: .5em;
-  color: #a5a5af; }
+  color: #74778c; }
 
 .post-list__meta--tags {
   margin-left: .5em; }
