@@ -57,7 +57,7 @@
                         {{ range sort .Params.language }}
                             <article>
                                 <h2>{{ .language }}</h2>
-                                <p>{{ .type }}</p>
+                                <p class="language-type">{{ .type }}</p>
                             </article>
                         {{ end }}
                     </div>
@@ -84,21 +84,6 @@
                                 </ul>
                             </article>
                         {{ end }}
-                    </div>
-                    <div class="clear"></div>
-                </section>
-                {{ end }}
-
-                {{ if .Params.skill }}
-                <section>
-                    <div class="sectionTitle">
-                        <h1>Skills</h1>
-                    </div>
-
-                    <div class="sectionContent">
-                        <ul class="keySkills">
-                            <li>A Key Skill</li>
-                        </ul>
                     </div>
                     <div class="clear"></div>
                 </section>
