@@ -40,25 +40,25 @@
 	<meta name="twitter:card" content="summary">
     <meta name="twitter:creator" content="@kevcui">
 	{{ if .Params.excerpt }}
-		<meta name="description" content="{{ .Params.excerpt }}">
-		<meta name="og:description" content="{{ .Params.excerpt }}">
-		<meta name="twitter:description" content="{{ .Params.excerpt }}">
-		<meta itemprop="description" content="{{ .Params.excerpt }}">
+    <meta name="description" content="{{ .Params.excerpt }}">
+    <meta name="og:description" content="{{ .Params.excerpt }}">
+    <meta name="twitter:description" content="{{ .Params.excerpt }}">
+    <meta itemprop="description" content="{{ .Params.excerpt }}">
 	{{ else }}
-		<meta name="description" content="{{ .Summary }}">
-		<meta name="og:description" content="{{ .Summary }}">
-		<meta name="twitter:description" content="{{ .Summary }}">
-		<meta itemprop="description" content="{{ .Summary }}">
+    <meta name="description" content="{{ .Summary }}">
+    <meta name="og:description" content="{{ .Summary }}">
+    <meta name="twitter:description" content="{{ .Summary }}">
+    <meta itemprop="description" content="{{ .Summary }}">
 	{{ end }}
 	{{if .Params.image }}
-	   <meta property="og:image" content="{{ .Params.image }}"/>
-	   <meta property="twitter:image" content="{{ .Params.image }}"/>
-	   <meta itemprop="image" content="{{ .Params.image }}">
+	<meta property="og:image" content="{{ .Params.image }}"/>
+	<meta property="twitter:image" content="{{ .Params.image }}"/>
+	<meta itemprop="image" content="{{ .Params.image }}">
 	{{else}}
 		{{if .Site.Params.cover}}
-		   <meta property="og:image" content="{{ .Site.BaseURL }}/{{.Site.Params.logo }}"/>
-		   <meta property="twitter:image" content="{{ .Site.BaseURL }}/{{.Site.Params.logo }}"/>
-		   <meta itemprop="image" content="{{ .Site.BaseURL }}/{{.Site.Params.logo }}">
+	<meta property="og:image" content="{{ .Site.BaseURL }}/{{.Site.Params.logo }}"/>
+	<meta property="twitter:image" content="{{ .Site.BaseURL }}/{{.Site.Params.logo }}"/>
+	<meta itemprop="image" content="{{ .Site.BaseURL }}/{{.Site.Params.logo }}">
 		{{end}}
 	{{end}}
     <!-- CSS -->
