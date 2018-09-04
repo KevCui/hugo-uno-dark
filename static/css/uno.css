@@ -1395,7 +1395,7 @@ hr {
   border: none;
   box-shadow: none; }
 
-.post img {
+.post img, .post embed {
   max-width: 100%;
   margin: 0 auto;
   border-radius: 3px;
