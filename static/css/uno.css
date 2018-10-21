@@ -112,11 +112,11 @@ body {
   background: -o-linear-gradient(right, #161821, #282c44); [> For Opera 11.1 to 12.0 <]
   background: -webkit-linear-gradient(left, #161821, #282c44); [> For Safari 5.1 to 6.0 <]
   background: linear-gradient(to right, #161821, #282c44); [> Standard syntax <]*/
-  line-height: 1.2;
+  line-height: 1.575em;
   font-family: "Interface", sans-serif;
   font-weight: 400;
   font-kerning: normal;
-  font-size: 1em;
+  font-size: 1.05em;
   color: #c7c9d1;
   width: 100%;
   *zoom: 1;
@@ -1581,17 +1581,18 @@ h4,
 h5 {
   font-family: "Raleway", serif;
   font-kerning: normal;
-  margin-top: 0.8em;
-  margin-bottom: 0.4em;
   font-weight: lighter;
   color: #c7c9d1;
-  line-height: 1.2;
+  line-height: 1.575em;
+  margin-top: 3.15em;
+  margin-bottom: 1.575em;
   -webkit-font-smoothing: antialiased;
 }
 
 h1 {
-  line-height: 1em;
-  margin-bottom: 1.2em;
+  line-height: 1.2em;
+  margin-top: 1.2em;
+  margin-bottom: 0.6em;
   font-size: 2.2em;
   font-weight: bold;
   letter-spacing: 0.05em;
@@ -1599,30 +1600,30 @@ h1 {
 
 h2 {
   font-size: 2em;
+  margin-bottom: 0.6em;
 }
 
 h3 {
+  font-size: 1.5em;
   font-weight: bold;
   padding: 0.3em 0em 0.3em 0.5em;
-  margin-top: 2em;
-  margin-bottom: 1em;
   border-left: 15px solid #3d415d;
-  font-size: 1.5em;
 }
 
-h4 {
-  margin-bottom: 0.8em;
-  font-size: 1.2em;
-}
-
+h4,
 h5 {
   font-size: 1em;
+  line-height: 1em;
+  margin-top: 3em;
+  margin-bottom: 1.5em;
+  padding: 0.3em 0em 0.3em 0.5em;
+  border-left: 10px solid #3d415d;
 }
 
 p {
-  font-size: 1em;
-  line-height: 1.5em;
-  margin-bottom: 1.5em;
+  font-size: 1.05em;
+  line-height: 1.575em;
+  margin-bottom: 1.575em;
 }
 
 strong {
@@ -2381,9 +2382,6 @@ input[type="tel"]:focus {
   }
 }
 @media only screen and (max-width: 1100px) {
-  html {
-    font-size: 110%;
-  }
   .panel-title {
     font-weight: lighter;
     font-size: 2em;
