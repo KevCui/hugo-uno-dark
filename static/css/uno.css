@@ -106,23 +106,6 @@ section {
   display: block;
 }
 
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after {
-  content: "";
-  content: none;
-}
-
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
 body {
   background: #161821;
   /*background: -moz-linear-gradient(right, #161821, #282c44); [> For Firefox 3.6 to 15 <]
@@ -132,6 +115,7 @@ body {
   line-height: 1.2;
   font-family: "Interface", sans-serif;
   font-weight: 400;
+  font-kerning: normal;
   font-size: 1em;
   color: #c7c9d1;
   width: 100%;
@@ -1596,6 +1580,7 @@ h3,
 h4,
 h5 {
   font-family: "Raleway", serif;
+  font-kerning: normal;
   margin-top: 0.8em;
   margin-bottom: 0.4em;
   font-weight: lighter;
@@ -1619,9 +1604,10 @@ h2 {
 h3 {
   font-weight: bold;
   padding: 0.3em 0em 0.3em 0.5em;
-  margin-bottom: 0.8em;
+  margin-top: 2em;
+  margin-bottom: 1em;
   border-left: 15px solid #3d415d;
-  font-size: 1.6em;
+  font-size: 1.5em;
 }
 
 h4 {
@@ -1634,8 +1620,9 @@ h5 {
 }
 
 p {
-  margin-bottom: 0.8em;
-  line-height: 1.5;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 strong {
@@ -1661,6 +1648,8 @@ blockquote {
   text-align: center;
 }
 blockquote p:last-child {
+  hanging-punctuation: first;
+  text-indent: -0.5em;
   margin-bottom: 0;
 }
 
@@ -1770,7 +1759,7 @@ sup {
 .content-wrapper {
   z-index: 800;
   width: 60%;
-  /*max-width: 960px;*/
+  max-width: 960px;
   margin-left: 40%;
 }
 
