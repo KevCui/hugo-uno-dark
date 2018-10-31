@@ -26,9 +26,9 @@
     }
 
     if ($('.panel-cover').hasClass('panel-cover--collapsed') === false) {
-      $('.panel-cover__title').addClass('animated fadeIn')
+      $('.panel-cover__title').addClass('animated fadeInDown')
       $('.panel-cover__description').addClass('animated fadeIn')
-      $('.navigation-wrapper').addClass('animated fadeInDown')
+      $('.navigation-wrapper').addClass('animated fadeInUp')
     } else {
       $('.mobile-top-right-button').css('display', 'block')
       $('.mobile-top-right-button').addClass('animated fadeInDown')

@@ -11,11 +11,20 @@
         <a href="https://github.com/{{ .Site.Params.github }}" title="{{ .Site.Params.github }} on github" target="_blank" rel="noopener"><span class="soc soc-github"></span></a>
     </li> {{ end }}
 
+    <!-- Stack Overflow -->
+    {{ if .Site.Params.stackoverflow }}
+    <li>
+        <a href="https://stackoverflow.com/users/{{ .Site.Params.stackoverflow }}" title="Stack Overflow" target="_blank" rel="noopener"><span class="soc soc-stackoverflow"></span></a>
+    </li> {{ end }}
+
     <!-- Medium -->
     {{ if .Site.Params.medium }}
     <li>
         <a href="https://medium.com/{{ .Site.Params.medium }}" title="Medium" target="_blank" rel="noopener"><span class="soc soc-medium"></span></a>
     </li> {{ end }}
+
+</ul>
+<ul class="soc">
 
     <!-- Flickr -->
     {{ if .Site.Params.flickr }}
@@ -34,12 +43,12 @@
     <li>
         <a href="https://unsplash.com/{{ .Site.Params.unsplash }}" title="Unsplash" target="_blank" rel="noopener"><span class="soc soc-unsplash"></span></a>
     </li> {{ end }}
-
     <!-- instagram -->
     {{ if .Site.Params.instagram }}
     <li>
         <a href="https://instagram.com/{{ .Site.Params.instagram }}" title="Instagram" target="_blank" rel="noopener"><span class="soc soc-instagram"></span></a>
     </li> {{ end }}
+
 
     <!-- Xing -->
     {{ if .Site.Params.xing }}

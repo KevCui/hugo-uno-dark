@@ -290,6 +290,15 @@ article:nth-child(10) {
   animation-delay: 1.8s;
 }
 
+.main-button {
+  padding: 0.5em 0.625em 0.5em 0.625em;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.main-button:hover {
+  background-color: #999999;
+}
+
 .resume-button {
   display: none;
 }
@@ -1743,7 +1752,7 @@ sup {
 .label {
   position: relative;
   display: inline-block;
-  padding: 8px 18px 9px 18px;
+  padding: 8px 18px 8px 18px;
   background: #c7c9d1;
   border-radius: 3px;
   text-align: center;
@@ -1870,10 +1879,18 @@ hr {
 }
 
 .panel-title {
-  margin: 0 0 5px 0;
   font-size: 1.8em;
   letter-spacing: 4px;
   color: #fff;
+}
+
+.panel-title a:hover {
+  background-color: #999999;
+}
+
+.blog-title {
+  padding: 0.5em 0.625em 0.5em 0.625em;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .panel-subtitle {
@@ -2496,6 +2513,11 @@ input[type="tel"]:focus {
     display: block;
   }
 
+  .blog-title,
+  .main-button {
+    background-color: transparent;
+  }
+
   .share,
   .panel-cover.panel-cover--collapsed .main-button,
   .panel-cover.panel-cover--collapsed .panel-cover__mobile-button,
@@ -2519,7 +2541,7 @@ input[type="tel"]:focus {
     left: 0;
     width: 100%;
     padding: 20px 0;
-    background: rgba(22, 24, 33, 0.4);
+    background: rgba(0, 0, 0, 0.8);
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   }
   .navigation-wrapper.visible {
@@ -2666,13 +2688,15 @@ td {
   line-height: 42px;
   font-size: 20px;
   margin-right: 10px;
-  color: #c7c9d1;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .soc a:hover {
   z-index: 2;
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
+  background: #c7c9d1;
 }
 .soc-icon-last {
   margin: 0 !important;
@@ -2709,4 +2733,7 @@ td {
 }
 .soc-rss:before {
   content: "\e071";
+}
+.soc-stackoverflow:before {
+  content: "\e07b";
 }
