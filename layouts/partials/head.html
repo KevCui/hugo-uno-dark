@@ -71,7 +71,8 @@
     <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/animate.min.css" />
     <!-- Script -->
     <script src="{{ .Site.BaseURL }}/js/jquery.min.js"></script>
-    <script src="{{ .Site.BaseURL }}/js/main.min.js"></script>
+    {{ $mainjs := resources.Get "js/main.js" | resources.Minify }}
+    <script src="{{ $mainjs.Permalink }}">></script>
     <script>
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('./sw.js')

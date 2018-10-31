@@ -1,6 +1,8 @@
-<script type="text/javascript" src="/js/awesome-toc.min.js"></script>
+{{ $tocjs := resources.Get "js/awesome-toc.js" | resources.Minify }}
+<script type="text/javascript" src="{{ $tocjs.Permalink }}"></script>
+
 <script type="text/javascript">
-$.awesome_toc({        
+$.awesome_toc({
     title: "Index",
     overlay: true,
     contentId: "post-content",
