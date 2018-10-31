@@ -7,6 +7,7 @@
       if (window.screen.width > 960) {
         $('header').css('background-image', '')
         $('.panel-cover--overlay').fadeOut(200)
+        $(".panel-cover__logo").css('visibility',"hidden");
       } else {
         $('header').css('background-image', 'url(' + img + ')')
         $('p img[alt="coverimage"]')
@@ -22,6 +23,7 @@
     window.location.pathname.substring(0, 6) === '/page/' ||
     window.location.pathname.substring(0, 8) === '/resume/'
     ) {
+      $(".panel-cover__logo").css('visibility',"visible");
       animateSider()
     }
 

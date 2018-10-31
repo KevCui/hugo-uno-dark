@@ -69,24 +69,4 @@
     {{ $syntaxcss := resources.Get "css/syntax.css" | resources.Minify }}
     <link rel="stylesheet" type="text/css" href="{{ $syntaxcss.Permalink }}" />
     <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/animate.min.css" />
-    <!-- Script -->
-    <script src="{{ .Site.BaseURL }}/js/jquery.min.js"></script>
-    {{ $mainjs := resources.Get "js/main.js" | resources.Minify }}
-    <script src="{{ $mainjs.Permalink }}">></script>
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('./sw.js')
-            .then(function(registration) {
-                console.log("Service Worker Registered", registration);
-            })
-            .catch(function(err) {
-                console.log("Service Worker Failed to Register", err);
-            })
-        }
-    </script>
-    {{ if .Params.highlight }}
-        <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/monokai.min.css">
-        <script src="{{ .Site.BaseURL }}/js/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
-    {{ end }}
 </head>
