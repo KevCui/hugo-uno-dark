@@ -174,33 +174,22 @@
   var addToggleButton = function () {
     var toggleBtn = document.createElement('div')
     toggleBtn.setAttribute('id', baseConfig.sideBarPrefix + 'toggleBtn')
+    toggleBtn.setAttribute('class', 'icon icon-list')
     $(toggleBtn).css({
-      background: '#222 none repeat scroll 0 0',
-      bottom: '55px',
+      background: 'rgb(0, 0, 0, 0.7)',
+      bottom: '125px',
       cursor: 'pointer',
-      height: '15px',
-      'line-height': '0',
+      color: '#fff',
+      height: '50px',
+      'line-height': '50px',
       padding: '5px',
       position: 'fixed',
       right: '50px',
-      width: '15px',
+      width: '50px',
+      'font-size': '24px',
+      'text-align': 'center',
       'z-index': '' + (baseConfig.css.zIndex + 1)
     })
-
-    for (var i = 0; i < 3; i++) {
-      var line = document.createElement('span')
-      $(line)
-        .css({
-          background: '#fff none repeat scroll 0 0',
-          display: 'inline-block',
-          height: '2px',
-          'margin-top': '2px',
-          position: 'relative',
-          'vertical-align': 'top',
-          width: '100%'
-        })
-        .appendTo(toggleBtn)
-    }
 
     $('body').append(toggleBtn)
 
@@ -245,18 +234,18 @@
     toTopBtn.setAttribute('id', baseConfig.sideBarPrefix + 'toTopBtn')
     $(toTopBtn)
       .css({
-        background: '#222 none repeat scroll 0 0',
-        bottom: '25px',
+        background: 'rgb(0, 0, 0, 0.7)',
+        bottom: '50px',
         cursor: 'pointer',
-        height: '15px',
-        'line-height': '15px',
+        height: '50px',
+        'line-height': '50px',
         padding: '5px',
         position: 'fixed',
         right: '50px',
-        width: '15px',
+        width: '50px',
         'z-index': '' + (baseConfig.css.zIndex + 1),
         color: '#fff',
-        'font-size': '16px',
+        'font-size': '24px',
         'text-align': 'center'
       })
       .html('<span style="margin: 0 auto">&#9650;</span>')

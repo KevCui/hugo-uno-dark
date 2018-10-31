@@ -1,5 +1,12 @@
 (function ($) {
   $(document).ready(function () {
+    $('.panel-cover__logo').css('visibility', 'visible')
+    $('.main-button').css('visibility', 'visible')
+    $('.soc').css('visibility', 'visible')
+    $('.blog-title').attr('href', '/')
+    $('.blog-title').text('Kevin Cui')
+    $('.blog-title').removeClass('icon icon-arrow-left')
+
     $('body').removeClass('no-js')
     $('.singlepost').addClass('animated fadeIn')
     var img = $('p img[alt="coverimage"]').attr('src')
@@ -7,7 +14,12 @@
       if (window.screen.width > 960) {
         $('header').css('background-image', '')
         $('.panel-cover--overlay').fadeOut(200)
-        $(".panel-cover__logo").css('visibility',"hidden");
+        $('.panel-cover__logo').css('visibility', 'hidden')
+        $('.main-button').css('visibility', 'hidden')
+        $('.soc').css('visibility', 'hidden')
+        $('.blog-title').attr('href', '/#blog')
+        $('.blog-title').text('')
+        $('.blog-title').addClass('icon icon-arrow-left')
       } else {
         $('header').css('background-image', 'url(' + img + ')')
         $('p img[alt="coverimage"]')
@@ -23,7 +35,6 @@
     window.location.pathname.substring(0, 6) === '/page/' ||
     window.location.pathname.substring(0, 8) === '/resume/'
     ) {
-      $(".panel-cover__logo").css('visibility',"visible");
       animateSider()
     }
 
