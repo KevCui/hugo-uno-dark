@@ -1,5 +1,7 @@
   {{ partial "head.html" . }}
-  <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/resume.min.css">
+  {{ $resumecss := resources.Get "css/resume.css" | resources.Minify }}
+  <link rel="stylesheet" type="text/css" href="{{ $resumecss.Permalink }}" />
+
   <body>
     {{ partial "sidebar.html" . }}
     <div class="content-wrapper">

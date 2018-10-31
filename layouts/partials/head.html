@@ -62,16 +62,18 @@
 		{{end}}
 	{{end}}
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/uno.min.css" />
-    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/font.min.css" />
+    {{ $unocss := resources.Get "css/uno.css" | resources.Minify }}
+    <link rel="stylesheet" type="text/css" href="{{ $unocss.Permalink }}" />
+    {{ $fontcss := resources.Get "css/font.css" | resources.Minify }}
+    <link rel="stylesheet" type="text/css" href="{{ $fontcss.Permalink }}" />
+    {{ $syntaxcss := resources.Get "css/syntax.css" | resources.Minify }}
+    <link rel="stylesheet" type="text/css" href="{{ $syntaxcss.Permalink }}" />
     <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/animate.min.css" />
-    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/share.min.css" />
-    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/syntax.min.css" />
     <!-- Script -->
     <script src="{{ .Site.BaseURL }}/js/jquery.min.js"></script>
     <script src="{{ .Site.BaseURL }}/js/main.min.js"></script>
     <script>
-        if ('serviceWorker' in navigator) {  
+        if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('./sw.js')
             .then(function(registration) {
                 console.log("Service Worker Registered", registration);
