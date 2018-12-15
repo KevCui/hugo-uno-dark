@@ -14,9 +14,9 @@
     • on tags:
     {{ range $index, $element := .Params.tags }}
         {{ if eq (add $index 1) (len $.Params.tags) }}
-            <a href="/tags/{{ $element | urlize }}">{{ $element }}</a>
+            <a class="post-list__meta--tags" href="/tags/{{ $element | urlize }}">{{ $element }}</a>
         {{ else }}
-            <a href="/tags/{{ $element | urlize }}">{{ $element }},</a>
+            <a class="post-list__meta--tags" href="/tags/{{ $element | urlize }}">{{ $element }},</a>
         {{ end }}
     {{ end }}
 {{ end }}
