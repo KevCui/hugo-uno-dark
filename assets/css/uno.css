@@ -2447,17 +2447,13 @@ input[type='tel']:focus {
 }
 
 @media only screen and (max-width: 960px) {
-    #sidebar-toc-Ik4D-toTopBtn {
+    .toTopBtn {
         width: 30px !important;
         height: 30px !important;
         right: 25px !important;
         line-height: 25px !important;
         font-size: 20px !important;
         border-radius: 80% !important;
-    }
-
-    #sidebar-toc-Ik4D-toggleBtn {
-        visibility: hidden;
     }
 
     #cv {
@@ -2619,17 +2615,13 @@ input[type='tel']:focus {
     }
 }
 @media all and (max-width: 340px) {
-    #sidebar-toc-Ik4D-toTopBtn {
+    .toTopBtn {
         width: 30px !important;
         height: 30px !important;
         right: 25px !important;
         line-height: 25px !important;
         font-size: 20px !important;
         border-radius: 80% !important;
-    }
-
-    #sidebar-toc-Ik4D-toggleBtn {
-        visibility: hidden;
     }
 
     .panel-main__inner {
@@ -2781,4 +2773,31 @@ td {
 
 .soc-stackoverflow:before {
     content: '\e07b';
+}
+
+.display-block {
+    display: block !important;
+}
+
+.no-background {
+    background-image: url() !important;
+}
+
+.visibility-hidden {
+    visibility: hidden;
+}
+
+.toTopBtn {
+    background: rgb(0, 0, 0, 0.7);
+    bottom: 50px;
+    cursor: pointer;
+    height: 50px;
+    line-height: 50px;
+    padding: 5px;
+    position: fixed;
+    right: 50px;
+    width: 50px;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
 }
