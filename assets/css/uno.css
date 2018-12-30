@@ -108,11 +108,11 @@ section {
 
 body {
     background: #161821;
-    line-height: 1.575em;
+    line-height: 1.6em;
     font-family: 'Inter UI', sans-serif;
     font-weight: 400;
     font-kerning: normal;
-    font-size: 1.05em;
+    font-size: 1em;
     color: #c7c9d1;
     width: 100%;
     *zoom: 1;
@@ -1604,9 +1604,9 @@ h5 {
     font-kerning: normal;
     font-weight: lighter;
     color: #c7c9d1;
-    line-height: 1.575em;
+    line-height: 1.6em;
     margin-top: 3.15em;
-    margin-bottom: 1.575em;
+    margin-bottom: 1.6em;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -1642,9 +1642,9 @@ h5 {
 }
 
 p {
-    font-size: 1.05em;
-    line-height: 1.575em;
-    margin-bottom: 1.575em;
+    font-size: 1em;
+    line-height: 1.6em;
+    margin-bottom: 1.6em;
 }
 
 strong {
