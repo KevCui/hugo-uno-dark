@@ -301,6 +301,7 @@ article:nth-child(10) {
 }
 
 .main-button {
+    font-weight: 500;
     padding: 0.5em 0.625em 0.5em 0.625em;
     background-color: rgba(0, 0, 0, 0.9);
 }
