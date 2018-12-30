@@ -66,6 +66,8 @@
     <link rel="stylesheet" type="text/css" href="{{ $unocss.Permalink }}" />
     {{ $fontcss := resources.Get "css/font.css" | resources.Minify }}
     <link rel="stylesheet" type="text/css" href="{{ $fontcss.Permalink }}" />
+    {{ $interuifontcss := resources.Get "css/inter-ui.css" | resources.Minify }}
+    <link rel="stylesheet" type="text/css" href="{{ $interuifontcss.Permalink }}" />
     {{ $syntaxcss := resources.Get "css/syntax.css" | resources.Minify }}
     <link rel="stylesheet" type="text/css" href="{{ $syntaxcss.Permalink }}" />
     <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/animate.min.css" />
