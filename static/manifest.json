@@ -3,12 +3,12 @@
   "name": "Kevin Cui",
   "icons": [
     {
-      "src":"/images/favicons/android-icon-192x192.png",
-      "sizes": "192x192",
+      "src":"/images/kc.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ],
-  "start_url": "/#blog",
+  "start_url": "/",
   "background_color": "#000",
   "theme_color": "#000",
   "display": "standalone"
