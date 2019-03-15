@@ -5,7 +5,7 @@
             {{ if eq .IsHome false }}
                 <a class="mobile-top-right-button" href="/#blog">Other Posts</a>
             {{ else }}
-                <a class="mobile-top-right-button" href="{{ .Site.BaseURL }}/"  title="link to homepage for {{ .Site.Title }}">{{ .Site.Title }}</a>
+                <a class="mobile-top-right-button" href="{{ .Site.BaseURL }}/"  title="{{ .Site.Title }} homepage">{{ .Site.Title }}</a>
             {{ end }}
     </span>
     <header class="
@@ -21,9 +21,9 @@
     <div class="panel-main">
         <div class="panel-main__inner panel-inverted">
             <div class="panel-main__content"> {{ if .Site.Params.logo }}
-                <a href="{{ .Site.BaseURL }}/" title="link to homepage for {{ .Site.Title }}"> <img src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }} logo" class="panel-cover__logo logo" /> </a> {{ end }}
+                <a href="{{ .Site.BaseURL }}/" title="{{ .Site.Title }} homepage"> <img src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }} logo" class="panel-cover__logo logo" /> </a> {{ end }}
                 <h1 class="panel-cover__title panel-title">
-                    <a class="blog-title" href="{{ .Site.BaseURL }}/"  title="link to homepage for {{ .Site.Title }}">{{ .Site.Title }}</a>
+                    <a class="blog-title" href="{{ .Site.BaseURL }}/"  title="{{ .Site.Title }} homepage">{{ .Site.Title }}</a>
                 </h1>
                 <br/>
                 {{ if .Site.Params.description }}
@@ -42,7 +42,7 @@
                 {{ else }}
                     <p class=""><a class="main-button" href="/#blog">blog</a></p>
                 {{ end }}
-                <p class=""><a title="resume" class="main-button" href="/resume">résumé</a></p>
+                <p class=""><a title="my resume" class="main-button" href="/resume">résumé</a></p>
 
             </div>
         </div>
@@ -63,9 +63,9 @@
         <div class="panel-main">
             <div class="panel-main__inner panel-inverted">
                 <div class="panel-main__content"> {{ if .Site.Params.logo }}
-                    <a href="{{ .Site.BaseURL }}/" title="link to homepage for {{ .Site.Title }}"> <img src="{{ .Site.Params.logo }}" width="80" alt="{{ .Site.Title }} logo" class="panel-cover__logo logo" /> </a> {{ end }}
+                    <a href="{{ .Site.BaseURL }}/" title="{{ .Site.Title }} homepage"> <img src="{{ .Site.Params.logo }}" width="80" alt="{{ .Site.Title }} logo" class="panel-cover__logo logo" /> </a> {{ end }}
                     <h1 class="panel-cover__title panel-title">
-                        <a class="blog-title" href="{{ .Site.BaseURL }}/"  title="link to homepage for {{ .Site.Title }}">{{ .Site.Title }}</a>
+                        <a class="blog-title" href="{{ .Site.BaseURL }}/"  title="{{ .Site.Title }} homepage">{{ .Site.Title }}</a>
                     </h1>
                     {{ if .Site.Params.description }}
                     <hr class="panel-cover__divider" />
@@ -82,7 +82,7 @@
                     {{ else }}
                         <p><a class="main-button" href="/#blog">blog</a></p>
                     {{ end }}
-                    <p class=""><a title="resume" class="main-button" href="/resume">résumé</a></p>
+                    <p class=""><a title="my resume" class="main-button" href="/resume">résumé</a></p>
                 </div>
             </div>
             <div class="panel-cover--overlay"></div>

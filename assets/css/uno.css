@@ -107,13 +107,13 @@ section {
 }
 
 body {
-    background: #161821;
+    background: #212121;
     line-height: 1.6em;
     font-family: 'Inter UI', sans-serif;
     font-weight: 400;
     font-kerning: normal;
     font-size: 1em;
-    color: #c7c9d1;
+    color: #bdbdbd;
     width: 100%;
     *zoom: 1;
 }
@@ -134,7 +134,7 @@ body:after {
 }
 
 ::-webkit-scrollbar-track {
-    background: #161821;
+    background: #212121;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -303,7 +303,6 @@ article:nth-child(10) {
 .main-button {
     font-weight: 500;
     padding: 0.5em 0.625em 0.5em 0.625em;
-    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .main-button:hover {
@@ -1491,7 +1490,7 @@ html {
 
 a {
     text-decoration: none;
-    color: #c7c9d1;
+    color: #bdbdbd;
 }
 
 li > a,
@@ -1521,7 +1520,7 @@ p > a:before {
     left: 0;
     right: 100%;
     bottom: 0;
-    background: #c7c9d1;
+    background: #bdbdbd;
     height: 1px;
     -webkit-transition-property: right;
     transition-property: right;
@@ -1568,7 +1567,7 @@ section > ul > li > a:active:before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #c7c9d1;
+    background: #bdbdbd;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transform-origin: 0 50%;
@@ -1584,7 +1583,7 @@ section > ul > li > a:active:before {
 .hvr-bounce-to-right:hover,
 .hvr-bounce-to-right:focus,
 .hvr-bounce-to-right:active {
-    color: #161821 !important;
+    color: #212121 !important;
 }
 
 .hvr-bounce-to-right:hover:before,
@@ -1604,7 +1603,7 @@ h5 {
     font-family: 'Raleway', serif;
     font-kerning: normal;
     font-weight: lighter;
-    color: #c7c9d1;
+    color: #bdbdbd;
     line-height: 1.6em;
     margin-top: 3.15em;
     margin-bottom: 1.6em;
@@ -1649,7 +1648,7 @@ p {
 }
 
 strong {
-    color: #c7c9d1;
+    color: #bdbdbd;
     font-weight: bold;
 }
 
@@ -1660,7 +1659,7 @@ em {
 }
 
 blockquote {
-    color: #c7c9d1;
+    color: #bdbdbd;
     font-family: 'Raleway', serif;
     margin: 1em 0;
     padding: 1em 0;
@@ -1769,7 +1768,7 @@ sup {
     position: relative;
     display: inline-block;
     padding: 8px 18px 8px 18px;
-    background: #c7c9d1;
+    background: #bdbdbd;
     border-radius: 3px;
     text-align: center;
     color: #fff;
@@ -1908,7 +1907,6 @@ hr {
 
 .blog-title {
     padding: 0.5em 0.625em 0.5em 0.625em;
-    background: rgba(0, 0, 0, 0.7);
 }
 
 .panel-subtitle {
@@ -1927,7 +1925,7 @@ hr {
     width: 100%;
     max-width: none;
     height: 100%;
-    background-color: #161821;
+    background-color: #212121;
     background-size: cover;
 }
 
@@ -2285,7 +2283,7 @@ i {
 
 .post-list__post-title a {
     font-weight: bold;
-    color: #c7c9d1;
+    color: #bdbdbd;
 }
 
 .post-list__meta {
@@ -2714,14 +2712,13 @@ td {
     font-size: 20px;
     margin-right: 10px;
     color: #ffffff;
-    background: rgba(0, 0, 0, 0.8);
 }
 
 .soc a:hover {
     z-index: 2;
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
-    background: #c7c9d1;
+    background: #bdbdbd;
 }
 
 .soc-icon-last {
