@@ -112,7 +112,7 @@ body {
     font-family: 'Inter UI', sans-serif;
     font-weight: 400;
     font-kerning: normal;
-    font-size: 1em;
+    font-size: 1.35em;
     color: #bdbdbd;
     width: 100%;
     *zoom: 1;
@@ -1643,8 +1643,8 @@ h5 {
 
 p {
     font-size: 1em;
-    line-height: 1.6em;
-    margin-bottom: 1.6em;
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
 }
 
 strong {
@@ -1665,7 +1665,7 @@ blockquote {
     padding: 1em 0;
     font-weight: lighter;
     font-style: italic;
-    font-size: 1.4em;
+    font-size: 1em;
     width: 90%;
     text-align: center;
 }
@@ -1739,7 +1739,8 @@ sup {
 
 .excerpt {
     margin: 1em 0 0 0;
-    font-size: 1em;
+    font-size: 0.85em;
+    line-height: 1.5em;
     color: #a4a1a6;
 }
 
@@ -2437,6 +2438,10 @@ input[type='tel']:focus {
 }
 
 @media only screen and (max-width: 960px) {
+    html {
+        font-size: 80%;
+    }
+
     .toTopBtn {
         width: 30px !important;
         height: 30px !important;
@@ -2448,11 +2453,6 @@ input[type='tel']:focus {
 
     #cv {
         margin-bottom: 0px !important;
-    }
-
-    p {
-        line-height: 1.8;
-        margin-bottom: 1.5em;
     }
 
     .swirl {
@@ -2605,6 +2605,10 @@ input[type='tel']:focus {
     }
 }
 @media all and (max-width: 340px) {
+    html {
+        font-size: 75%;
+    }
+
     .toTopBtn {
         width: 30px !important;
         height: 30px !important;
