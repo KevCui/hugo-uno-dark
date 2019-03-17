@@ -107,13 +107,13 @@ section {
 }
 
 body {
-    background: #212121;
+    background: #1b1b1e;
     line-height: 1.6em;
     font-family: 'Inter UI', sans-serif;
     font-weight: 400;
     font-kerning: normal;
     font-size: 1.35em;
-    color: #bdbdbd;
+    color: #b1b4b9;
     width: 100%;
     *zoom: 1;
 }
@@ -134,7 +134,7 @@ body:after {
 }
 
 ::-webkit-scrollbar-track {
-    background: #212121;
+    background: #1b1b1e;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -1490,12 +1490,12 @@ html {
 
 a {
     text-decoration: none;
-    color: #bdbdbd;
+    color: #b1b4b9;
 }
 
 li > a,
 section > p > a {
-    color: #859fc8;
+    color: #6f9fb0;
 }
 
 article > div > a,
@@ -1520,7 +1520,7 @@ p > a:before {
     left: 0;
     right: 100%;
     bottom: 0;
-    background: #bdbdbd;
+    background: #b1b4b9;
     height: 1px;
     -webkit-transition-property: right;
     transition-property: right;
@@ -1567,7 +1567,7 @@ section > ul > li > a:active:before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #bdbdbd;
+    background: #b1b4b9;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transform-origin: 0 50%;
@@ -1583,7 +1583,7 @@ section > ul > li > a:active:before {
 .hvr-bounce-to-right:hover,
 .hvr-bounce-to-right:focus,
 .hvr-bounce-to-right:active {
-    color: #212121 !important;
+    color: #1b1b1e !important;
 }
 
 .hvr-bounce-to-right:hover:before,
@@ -1603,7 +1603,7 @@ h5 {
     font-family: 'Raleway', serif;
     font-kerning: normal;
     font-weight: lighter;
-    color: #bdbdbd;
+    color: #b1b4b9;
     line-height: 1.6em;
     margin-top: 3.15em;
     margin-bottom: 1.6em;
@@ -1628,7 +1628,7 @@ h3 {
     font-size: 1.5em;
     font-weight: bold;
     padding: 0.3em 0em 0.3em 0.5em;
-    border-left: 15px solid #3d415d;
+    border-left: 15px solid #bb4b67;
 }
 
 h4,
@@ -1638,7 +1638,7 @@ h5 {
     margin-top: 3em;
     margin-bottom: 1.5em;
     padding: 0.3em 0em 0.3em 0.5em;
-    border-left: 10px solid #3d415d;
+    border-left: 10px solid #bb4b67;
 }
 
 p {
@@ -1648,7 +1648,7 @@ p {
 }
 
 strong {
-    color: #bdbdbd;
+    color: #b1b4b9;
     font-weight: bold;
 }
 
@@ -1659,7 +1659,7 @@ em {
 }
 
 blockquote {
-    color: #bdbdbd;
+    color: #b1b4b9;
     font-family: 'Raleway', serif;
     margin: 1em 0;
     padding: 1em 0;
@@ -1704,7 +1704,7 @@ ul ul {
 }
 
 code {
-    color: #e3a676;
+    color: #bb4b67;
     word-wrap: break-word;
     border-radius: 5px;
     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
@@ -1734,7 +1734,7 @@ sup {
 .time a,
 .author a,
 .tags a {
-    color: #859fc8;
+    color: #6f9fb0;
 }
 
 .excerpt {
@@ -1769,7 +1769,7 @@ sup {
     position: relative;
     display: inline-block;
     padding: 8px 18px 8px 18px;
-    background: #bdbdbd;
+    background: #b1b4b9;
     border-radius: 3px;
     text-align: center;
     color: #fff;
@@ -1926,7 +1926,7 @@ hr {
     width: 100%;
     max-width: none;
     height: 100%;
-    background-color: #212121;
+    background-color: #1b1b1e;
     background-size: cover;
 }
 
@@ -2275,7 +2275,7 @@ i {
 
 .post-list__post-title a {
     font-weight: bold;
-    color: #bdbdbd;
+    color: #b1b4b9;
 }
 
 .post-list__meta {
@@ -2713,7 +2713,7 @@ td {
     z-index: 2;
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
-    background: #bdbdbd;
+    background: #b1b4b9;
 }
 
 .soc-icon-last {
