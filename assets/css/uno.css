@@ -1653,7 +1653,7 @@ strong {
 }
 
 em {
-    color: ##a4a1a6;
+    color: ##8c8d8f;
     font-weight: lighter;
     font-style: italic;
 }
@@ -1727,7 +1727,7 @@ sup {
 .author,
 .tags {
     font-size: 0.9em;
-    color: #a4a1a6;
+    color: #8c8d8f;
 }
 
 .date a,
@@ -1741,14 +1741,14 @@ sup {
     margin: 1em 0 0 0;
     font-size: 0.85em;
     line-height: 1.5em;
-    color: #a4a1a6;
+    color: #8c8d8f;
 }
 
 .intro {
     font-family: 'Raleway', serif;
     font-size: 1.44em;
     font-weight: lighter;
-    color: #a4a1a6;
+    color: #8c8d8f;
 }
 
 .block-heading {
@@ -1797,7 +1797,7 @@ sup {
 .footer {
     display: block;
     padding: 2em 0 0 0;
-    border-top: 2px solid #dddddd;
+    border-top: 2px solid #616365;
     font-size: 0.7em;
     color: #b3b3b3;
 }
@@ -1832,7 +1832,7 @@ hr {
 .section-title__divider {
     width: 30%;
     margin: 2.2em 0 2.1em 0;
-    border-top: 1px solid #dddddd;
+    border-top: 1px solid #616365;
 }
 
 .hidden {
@@ -1840,13 +1840,13 @@ hr {
 }
 
 .post-comments {
-    border-top: 1px solid #dddddd;
+    border-top: 1px solid #616365;
     padding: 60px 0;
 }
 
 .post-meta {
     margin: 0 0 0.4em 0;
-    color: #a4a1a6;
+    color: #8c8d8f;
 }
 
 .post-meta__date {
@@ -1882,7 +1882,7 @@ hr {
     display: block;
     width: 30%;
     margin: 2em 0;
-    border-top: 1px solid #dddddd;
+    border-top: 1px solid #616365;
 }
 
 .panel {
@@ -2117,8 +2117,8 @@ hr {
 }
 
 .btn-tertiary {
-    border-color: #a4a1a6;
-    color: #a4a1a6;
+    border-color: #8c8d8f;
+    color: #8c8d8f;
 }
 
 .btn-tertiary:hover {
@@ -2225,7 +2225,7 @@ nav {
 .pagination__page-number {
     margin-left: 22px;
     font-size: 1.2em;
-    color: #a4a1a6;
+    color: #8c8d8f;
 }
 
 .pagination__newer {
@@ -2282,23 +2282,23 @@ i {
     display: block;
     margin: 1em 0 0 0;
     font-size: 0.9em;
-    color: #a4a1a6;
+    color: #6f7173;
 }
 
 .post-list__meta--date {
     margin-right: 0.5em;
-    color: #a4a1a6;
+    color: #6f7173;
 }
 
 .post-list__meta--tags {
-    font-weight: bold;
     margin-left: 0.2em;
+    color: #6f9fb0;
 }
 
 .post-list__divider {
     width: 30%;
     margin: 2.2em 0 2.1em 0;
-    border-top: 1px solid #dddddd;
+    border-top: 1px solid #616365;
 }
 
 *:focus {
@@ -2321,7 +2321,7 @@ input[type='tel'] {
     width: 240px;
     padding: 1em 1em;
     background: #fff;
-    border: 1px solid #dddddd;
+    border: 1px solid #616365;
     border-radius: 3px;
     font-size: 0.9em;
     color: #666666;
