@@ -27,6 +27,9 @@
         window.location.pathname.substring(0, 8) === '/resume/'
     ) {
         animateSider()
+        if (window.location.pathname.substring(0, 8) === '/resume/'){
+            u('.mainDetails #name ').addClass('animated bounce')
+        }
     }
 
     if (u('.panel-cover').hasClass('panel-cover--collapsed') === false) {

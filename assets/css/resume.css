@@ -31,6 +31,7 @@ p {
 }
 
 #name h1 {
+    color: #bb4b67;
     font-size: 2.5em;
     font-weight: 700;
     font-family: 'Raleway', serif;
@@ -50,6 +51,8 @@ p {
 
 #name {
     float: none;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
 }
 
 #contactDetails {
@@ -115,9 +118,9 @@ section:last-child {
 }
 
 .sectionTitle h1 {
+    color: #bb4b67;
     font-family: 'Raleway', serif;
     font-size: 1.5em;
-    color: #b1b4b9;
     margin-top: 15px;
 }
 
@@ -218,6 +221,7 @@ section:last-child {
     /*}*/
 
     #name h1 {
+        color: #bb4b67;
         line-height: 0.8em;
         margin-top: 0px;
         margin-bottom: 4px;
