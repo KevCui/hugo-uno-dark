@@ -2445,6 +2445,8 @@ input[type='tel']:focus {
     }
 
     .toTopBtn {
+        color: #1b1b1e !important;
+        background: rgb(111, 159, 176, 0.8);
         width: 30px !important;
         height: 30px !important;
         right: 25px !important;
@@ -2612,6 +2614,8 @@ input[type='tel']:focus {
     }
 
     .toTopBtn {
+        color: #1b1b1e !important;
+        background: rgb(111, 159, 176, 0.8);
         width: 30px !important;
         height: 30px !important;
         right: 25px !important;
@@ -2784,7 +2788,7 @@ td {
 }
 
 .toTopBtn {
-    background: rgb(111, 159, 176, 0.8);
+    color: #b1b4b9;
     bottom: 50px;
     cursor: pointer;
     height: 50px;
@@ -2793,7 +2797,11 @@ td {
     position: fixed;
     right: 50px;
     width: 50px;
-    color: #1b1b1e;
     font-size: 24px;
     text-align: center;
+}
+
+.toTopBtn:hover {
+    color: #1b1b1e;
+    background: rgb(111, 159, 176, 0.8);
 }
