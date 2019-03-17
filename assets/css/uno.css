@@ -308,6 +308,7 @@ article:nth-child(10) {
 }
 
 .main-button:hover {
+    color: #1b1b1e;
     background-color: #6f9fb0;
 }
 
@@ -1904,6 +1905,7 @@ hr {
 }
 
 .panel-title a:hover {
+    color: #1b1b1e;
     background-color: #6f9fb0;
 }
 
@@ -1999,7 +2001,6 @@ hr {
     font-weight: 100;
     text-align: center;
     color: #b1b4b9;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 1);
 }
 
 .panel-inverted a {
