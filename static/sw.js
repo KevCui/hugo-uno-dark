@@ -5,6 +5,11 @@ var urlsToCache = [
     '/css/font.min.css',
     '/css/animate.min.css',
     '/css/dracula.min.css',
+    '/css/inter-ui.min.css',
+    '/css/syntax.min.css',
+    '/css/resume.min.css',
+    '/css/uno.min.css',
+    '/js/main.min.js',
     '/js/umbrella.min.js',
     '/js/highlight.min.js'
 ];
