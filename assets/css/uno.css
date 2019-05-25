@@ -1505,7 +1505,7 @@ article > div > a,
 span > a,
 section > ul > li > a,
 section > ol > li > a,
-p > a {
+#post-content > p > a {
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px transparent;
@@ -1517,7 +1517,7 @@ p > a {
 article > div > a:before,
 span > a:before,
 section > ul > li > a:before,
-p > a:before {
+#post-content > p > a:before {
     content: '';
     position: absolute;
     z-index: -1;
@@ -1525,18 +1525,18 @@ p > a:before {
     bottom: 0;
     left: -0.25em;
     right: -0.25em;
-    background: #f5ebdc;
+    background: #bb4b67;
     transform-origin: center right;
     transform: scaleX(0);
     transition: transform 0.2s ease-in-out;
 }
 
 span > a:hover:before,
-p > a:hover:before,
+#post-content > p > a:hover:before,
 span > a:focus:before,
-p > a:focus:before,
+#post-content > p > a:focus:before,
 span > a:active:before,
-p > a:active:before,
+#post-content > p > a:active:before,
 article > div > a:hover:before,
 article > div > a:focus:before,
 article > div > a:active:before,
