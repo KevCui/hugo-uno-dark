@@ -1511,6 +1511,7 @@ p > a {
     box-shadow: 0 0 1px transparent;
     position: relative;
     overflow: hidden;
+    z-index: 1;
 }
 
 article > div > a:before,
@@ -1520,17 +1521,14 @@ p > a:before {
     content: '';
     position: absolute;
     z-index: -1;
-    left: 0;
-    right: 100%;
+    top: 0;
     bottom: 0;
-    background: #6f9fb0;
-    height: 2px;
-    -webkit-transition-property: right;
-    transition-property: right;
-    -webkit-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
+    left: -0.25em;
+    right: -0.25em;
+    background: #f5ebdc;
+    transform-origin: center right;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
 }
 
 span > a:hover:before,
@@ -1545,7 +1543,8 @@ article > div > a:active:before,
 section > ul > li > a:hover:before,
 section > ul > li > a:focus:before,
 section > ul > li > a:active:before {
-    right: 0;
+    transform: scaleX(1);
+    transform-origin: center left;
 }
 
 /* Bounce To Right */
