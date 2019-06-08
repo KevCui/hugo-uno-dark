@@ -1607,15 +1607,13 @@ h5 {
     font-weight: lighter;
     color: #b1b4b9;
     line-height: 1.6em;
-    margin-top: 3.15em;
-    margin-bottom: 1.6em;
+    margin-top: 2.4em;
     -webkit-font-smoothing: antialiased;
 }
 
 h1 {
     line-height: 1.2em;
     margin-top: 1.2em;
-    margin-bottom: 0.6em;
     font-size: 2.2em;
     font-weight: bold;
     letter-spacing: 0.05em;
@@ -1623,7 +1621,6 @@ h1 {
 
 h2 {
     font-size: 2em;
-    margin-bottom: 0.6em;
 }
 
 h3 {
@@ -1637,8 +1634,7 @@ h4,
 h5 {
     font-size: 1em;
     line-height: 1em;
-    margin-top: 3em;
-    margin-bottom: 1.5em;
+    margin-top: 2.4em;
     padding: 0.3em 0em 0.3em 0.5em;
     border-left: 10px solid #bb4b67;
 }
@@ -1646,7 +1642,7 @@ h5 {
 p {
     font-size: 1em;
     line-height: 1.6em;
-    margin-bottom: 1.6em;
+    margin-top: 1.6em;
 }
 
 strong {
@@ -1680,7 +1676,7 @@ blockquote p:last-child {
 
 ol,
 ul {
-    margin: -0.8em 0 1em 1.2em;
+    margin: 0.8em 0 1em 1.5em;
     list-style: none;
 }
 
@@ -1694,7 +1690,7 @@ ul {
 
 ol li,
 ul li {
-    margin: 0 0 0.25em 0;
+    margin: 0.6em 0 0em 0;
     line-height: 1.5em;
 }
 
@@ -1702,13 +1698,15 @@ ol ol,
 ol ul,
 ul ol,
 ul ul {
-    margin: 0.1em 0 0.2em 2em;
+    margin: 0.6em 0 0em 2em;
 }
 
 code {
+    margin-top: 0.8em;
     color: #bb4b67;
     word-wrap: break-word;
     border-radius: 5px;
+    font-size: 16px;
     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
         DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
         serif;
@@ -1721,7 +1719,7 @@ pre {
 sup {
     position: relative;
     bottom: 0.6em;
-    font-size: 80%;
+    font-size: 75%;
 }
 
 .date,

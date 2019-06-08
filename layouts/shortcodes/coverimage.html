@@ -1,6 +1,7 @@
 <p class="coverimage">
     <img src="{{ index .Params 0 }}" alt="coverimage"/>
     {{ if index .Params 1 }}
+    <br/>
     <sup>
         <em>
             Photo by <a href="{{ index .Params 2 }}">{{ index .Params 1 }}</a>

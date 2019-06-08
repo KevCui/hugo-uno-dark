@@ -1,0 +1,10 @@
+<p class="imagsup">
+    <img src="{{ index .Params 0 }}" alt="{{ index .Params 1}}"/>
+    <br/>
+    <sup>
+        <em> {{ index .Params 2 }} </em>
+        {{ if index .Params 3 }}
+        <a href="{{ index .Params 3 }}"> {{ index .Params 4}} </a>
+        {{ end }}
+    </sup>
+</p>
