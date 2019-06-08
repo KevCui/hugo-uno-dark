@@ -39,16 +39,15 @@
                     </ul>
                 </div>
                 {{ end }}
-                <div class="clear"></div>
             </div>
 
             <div id="mainArea">
                 <section>
                     <p>{{ .Content }}</p>
-                    <div class="clear"></div>
                 </section>
 
                 {{ if .Params.language }}
+                <div class="clear"></div>
                 <section>
                     <div class="sectionTitle">
                         <h1>🙊 lang.</h1>
@@ -62,11 +61,11 @@
                             </article>
                         {{ end }}
                     </div>
-                    <div class="clear"></div>
                 </section>
                 {{ end }}
 
                 {{ if .Params.experience }}
+                <div class="clear"></div>
                 <section>
                     <div class="sectionTitle">
                         <h1>💻 exp.</h1>
@@ -78,19 +77,19 @@
                                 <h2>{{ .title }}</h2>
                                 <p class="subDetails-name"><a href="{{ .web }}">{{ .name }}</a></p>
                                 <p class="subDetails-date">{{ .date }}, {{ .location }}</p>
-                                <ul class="ul-memo">
-                                {{ range $i, $m := .memo }}
-                                    <li>{{ $m }}</li>
-                                {{ end }}
-                                </ul>
+                                    {{ range $i, $m := .memo }}
+                                    <ul class="ul-memo">
+                                        <li>{{ $m }}</li>
+                                    </ul>
+                                    {{ end }}
                             </article>
                         {{ end }}
                     </div>
-                    <div class="clear"></div>
                 </section>
                 {{ end }}
 
                 {{ if .Params.education }}
+                <div class="clear"></div>
                 <section>
                     <div class="sectionTitle">
                         <h1>🎓 edu.</h1>
@@ -102,17 +101,15 @@
                                 <h2>{{ .title }}</h2>
                                 <p class="subDetails-name"><a href={{ .web }}>{{ .name }}</a></p>
                                 <p class="subDetails-date">{{ .date }}, {{ .location }}</p>
-                                <ul class="ul-memo">
-                                {{ range $i, $m := .memo }}
-                                    <li>{{ $m }}</li>
-                                {{ end }}
-                                </ul>
+                                    {{ range $i, $m := .memo }}
+                                    <ul class="ul-memo">
+                                        <li>{{ $m }}</li>
+                                    </ul>
+                                    {{ end }}
                             </article>
                         {{ end }}
-                    <div class="clear"></div>
                 </section>
                 {{ end }}
-
             </div>
         </div>
 
