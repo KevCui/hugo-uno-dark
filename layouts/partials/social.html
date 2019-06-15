@@ -16,15 +16,14 @@
     <li>
         <a href="https://stackoverflow.com/users/{{ .Site.Params.stackoverflow }}" title="Stack Overflow" target="_blank" rel="noopener"><span class="soc soc-stackoverflow"></span></a>
     </li> {{ end }}
+</ul>
 
+<ul class="soc">
     <!-- instagram -->
     {{ if .Site.Params.instagram }}
     <li>
         <a href="https://www.instagram.com/{{ .Site.Params.instagram }}" title="Instagram" target="_blank" rel="noopener"><span class="soc soc-instagram"></span></a>
     </li> {{ end }}
-
-</ul>
-<ul class="soc">
 
     <!-- Medium -->
     {{ if .Site.Params.medium }}
