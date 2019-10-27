@@ -1884,6 +1884,15 @@ hr {
     border-top: 1px solid #616365;
 }
 
+.article-content:after {
+    content: "\2731";
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    line-height: 3em;
+    opacity: 0.5;
+}
+
 .panel {
     display: table;
     width: 100%;
