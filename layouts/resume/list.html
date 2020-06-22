@@ -110,6 +110,29 @@
                         {{ end }}
                 </section>
                 {{ end }}
+
+                {{ if .Params.certificate}}
+                <div class="clear"></div>
+                <section>
+                    <div class="sectionTitle">
+                        <h1>📜 cert.</h1>
+                    </div>
+
+                    <div class="sectionContent">
+                        {{ range sort .Params.certificate}}
+                            <article>
+                                <h2>{{ .title }}</h2>
+                                <p class="subDetails-name"><a href={{ .web }}>{{ .name }}</a></p>
+                                <p class="subDetails-date">{{ .date }}</p>
+                                    {{ range $i, $m := .memo }}
+                                    <ul class="ul-memo">
+                                        <li>{{ $m }}</li>
+                                    </ul>
+                                    {{ end }}
+                            </article>
+                        {{ end }}
+                </section>
+                {{ end }}
             </div>
         </div>
 
