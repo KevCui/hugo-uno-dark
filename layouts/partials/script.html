@@ -2,8 +2,9 @@
 {{ $mainjs := resources.Get "js/main.js" | resources.Minify }}
 <script src="{{ $mainjs.Permalink }}">></script>
 <script>
+    {{ if .Site.Params.serviceWorker }}
     if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js')
+        navigator.serviceWorker.register('{{ .Site.Params.serviceWorker }}')
         .then(function(registration) {
             console.log("Service Worker Registered", registration);
         })
@@ -11,6 +12,7 @@
             console.log("Service Worker Failed to Register", err);
         })
     }
+    {{ end }}
 </script>
 {{ if .Params.highlight }}
     <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/dracula.min.css">

@@ -4,7 +4,7 @@
 
 Dark Hugo Uno is a responsive hugo theme forked from [hugo-uno](https://github.com/fredrikloch/hugo-uno).
 
-How dose this theme look like? Checkout [my blog](https://krazycavin.github.io)
+How dose this theme look like? Checkout [my blog](https://kevcui.github.io)
 
 ### Usage
 

@@ -36,7 +36,7 @@
 	<meta itemprop="name" content="{{ .Title }}">
 	<meta name="twitter:title" content="{{ .Title }}">
 	<meta name="twitter:card" content="summary">
-    <meta name="twitter:creator" content="@kevcui">
+    <meta name="twitter:creator" content="{{ .Site.Params.twitter }}">
     <meta name="Description" content="Title: {{ .Site.Title}}; Author {{ .Site.Params.author }}">
 	{{ if .Params.excerpt }}
     <meta name="description" content="{{ .Params.excerpt }}">
