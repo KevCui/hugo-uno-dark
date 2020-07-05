@@ -42,7 +42,9 @@
                 {{ else }}
                     <p class=""><a class="main-button" href="/#blog">blog</a></p>
                 {{ end }}
-                <p class=""><a title="my resume" class="main-button" href="/resume">résumé</a></p>
+                {{ if .Site.Params.resume }}
+                    <p class=""><a title="my resume" class="main-button" href="{{ .Site.Params.resume }}">résumé</a></p>
+                {{ end }}
 
             </div>
         </div>
@@ -82,7 +84,9 @@
                     {{ else }}
                         <p><a class="main-button" href="/#blog">blog</a></p>
                     {{ end }}
-                    <p class=""><a title="my resume" class="main-button" href="/resume">résumé</a></p>
+                    {{ if .Site.Params.resume }}
+                        <p class=""><a title="my resume" class="main-button" href="{{ .Site.Params.resume }}">résumé</a></p>
+                    {{ end }}
                 </div>
             </div>
             <div class="panel-cover--overlay"></div>

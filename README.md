@@ -1,5 +1,4 @@
-hugo-uno-dark
-========
+# hugo-uno-dark
 
 The dark side of uno, a responsive hugo theme based on [hugo-uno](https://github.com/fredrikloch/hugo-uno).
 
@@ -8,15 +7,16 @@ How dose this theme look like? Check [my blog](https://krazycavin.github.io)
 ### How to enable resume page?
 
 To enable the access to resume page, it needs to put the path of resume in **config.toml**:
+
 ```
 resume = "/resume"
-
 ```
+
 In this case, the path to put resume content is **content/resume/**
 
-Then create **resume** folder and put **_index.md** file in it. An example of **_index.md** file can be found in **example** folder.
+Then create **resume** folder and put **\_index.md** file in it. An example of **\_index.md** file can be found in **example** folder.
 
-### What's the format of _index.md for resume?
+### What's the format of \_index.md for resume?
 
 ```
 ---
