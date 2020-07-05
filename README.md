@@ -1,71 +1,15 @@
-# hugo-uno-dark
+# Dark Hugo Uno
 
-The dark side of uno, a responsive hugo theme based on [hugo-uno](https://github.com/fredrikloch/hugo-uno).
+> The dark side of uno.
 
-How dose this theme look like? Check [my blog](https://krazycavin.github.io)
+Dark Hugo Uno is a responsive hugo theme forked from [hugo-uno](https://github.com/fredrikloch/hugo-uno).
 
-### How to enable resume page?
+How dose this theme look like? Checkout [my blog](https://krazycavin.github.io)
 
-To enable the access to resume page, it needs to put the path of resume in **config.toml**:
+### Usage
 
-```
-resume = "/resume"
-```
-
-In this case, the path to put resume content is **content/resume/**
-
-Then create **resume** folder and put **\_index.md** file in it. An example of **\_index.md** file can be found in **example** folder.
-
-### What's the format of \_index.md for resume?
-
-```
----
-title: "<page title>"
-contact: true|false
-author: true|false
-twitter: true|false
-github: true|false
-
-experience:
-    exp1:
-        title: Full-stack Batman
-        name: Wayne Manor
-        date: Jan 1939 - Now
-        location: Gotham City
-        web: https://en.wikipedia.org/wiki/Batman
-        memo: [
-            "I'm batman",
-            "I wear a mask",
-            "Save the world (part-time)",
-            "..."
-        ]
-    exp2:
-        title: unknown
-        date: unknown
-        location: unknown
-        web: unknown
-        memo: []
-
-education:
-    edu1:
-        title: self-educated
-        name: unknown
-        date: everyday
-        location: Gotham City
-        web: https://en.wikipedia.org/wiki/Gotham_City
-
-language:
-    lang1:
-        type: Human language
-        language: Human
----
-
-<introduction>
-```
-
-Multiple **experience** (exp1, exp2...), **education** (edu1, edu2...) and **language** (lang1, lang2...) are supported.
-
-**introduction** part will be rendered and displayed above experience part.
+- Clone this repo into `<hugo_root_dir>/themes/`
+- Add `theme=dark-ungo-uno` inside config file
 
 ### What's the format of config.toml?
 
@@ -105,3 +49,71 @@ MetaDataFormat = "yaml"
   fivehundredpx = ""
   disqus = ""
 ```
+
+### How to enable resume page?
+
+To enable the access to resume page, it needs to put the path of resume in **config.toml**:
+
+```
+resume = "/resume"
+```
+
+In this case, the path to put resume content is **content/resume/**
+
+Then create **resume** folder and put **\_index.md** file in it. An example of **\_index.md** file can be found in **example** folder.
+
+### What's the format of index.md for resume?
+
+```
+---
+title: "<page title>"
+contact: true|false
+author: true|false
+twitter: true|false
+github: true|false
+
+experience:
+    exp1:
+        title: Full-stack Batman
+        name: Wayne Manor
+        date: Jan 1939 - Now
+        location: Gotham City
+        web: https://en.wikipedia.org/wiki/Batman
+        memo: [
+            "I'm batman",
+            "I wear a mask",
+            "Save the world (part-time)",
+            "..."
+        ]
+    exp2:
+        title: unknown
+        date: unknown
+        location: unknown
+        web: unknown
+        memo: []
+
+education:
+    edu1:
+        title: self-educated
+        name: unknown
+        date: everyday
+        location: Gotham City
+        web: https://en.wikipedia.org/wiki/Gotham_City
+
+certificate:
+    cert1:
+        title: My first certificate
+        date: Jan 2000
+
+language:
+    lang1:
+        type: Human language
+        language: Human
+---
+
+<introduction>
+```
+
+Multiple **experience** (exp1, exp2...), **education** (edu1, edu2...) and **language** (lang1, lang2...) are supported.
+
+**introduction** part will be rendered and displayed above experience part.
