@@ -4,7 +4,7 @@
 <script>
     {{ if .Site.Params.serviceWorker }}
     if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('{{ .Site.Params.serviceWorker }}')
+        navigator.serviceWorker.register({{ .Site.Params.serviceWorker }})
         .then(function(registration) {
             console.log("Service Worker Registered", registration);
         })
