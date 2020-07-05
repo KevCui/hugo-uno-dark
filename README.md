@@ -1,15 +1,15 @@
-# Dark Hugo Uno
+# Hugo Uno Dark
 
-> The dark side of uno.
+> The dark side of hugo uno.
 
-Dark Hugo Uno is a responsive hugo theme forked from [hugo-uno](https://github.com/fredrikloch/hugo-uno).
+Hugo Uno Dark is a responsive hugo theme forked from [hugo-uno](https://github.com/fredrikloch/hugo-uno).
 
 How dose this theme look like? Checkout [my blog](https://kevcui.github.io)
 
 ### Usage
 
 - Clone this repo into `<hugo_root_dir>/themes/`
-- Add `theme=dark-ungo-uno` inside config file
+- Add `theme=hugo-uno-dark` inside config file
 
 ### What's the format of config.toml?
 
