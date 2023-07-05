@@ -70,4 +70,8 @@
     {{ $syntaxcss := resources.Get "css/syntax.css" | resources.Minify }}
     <link rel="stylesheet" type="text/css" href="{{ $syntaxcss.Permalink }}" />
     <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/fontawesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/brands.min.css" />
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/solid.min.css" />
+    <a rel="me" href="https://infosec.exchange/@kevcui">Mastodon</a>
 </head>
