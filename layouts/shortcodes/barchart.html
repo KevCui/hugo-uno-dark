@@ -15,7 +15,8 @@ Params:
     {{ with $.Get "name" }}
         {{ $name := . }}
           <canvas id="{{ $name }}" width="860" height="400"></canvas>
-        {{ $data := getJSON $url }}
+        {{ $remote := resources.GetRemote $url }}
+        {{ $data := $remote | transform.Unmarshal }}
 
           <script>
           var ctx = document.getElementById("{{ $name }}").getContext("2d");

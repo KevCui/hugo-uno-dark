@@ -32,31 +32,31 @@
 	<meta property="og:title" content="{{ .Title }}">
 	<meta property="og:url" content="{{ .Permalink }}">
 	<meta property="og:site_name" content="{{ .Site.Title }}">
-    <meta name="twitter:site" content="{{ .Site.Title }}">
+    <meta name="x:site" content="{{ .Site.Title }}">
 	<meta itemprop="name" content="{{ .Title }}">
-	<meta name="twitter:title" content="{{ .Title }}">
-	<meta name="twitter:card" content="summary">
-    <meta name="twitter:creator" content="{{ .Site.Params.twitter }}">
+	<meta name="x:title" content="{{ .Title }}">
+	<meta name="x:card" content="summary">
+    <meta name="x:creator" content="{{ .Site.Params.twitter }}">
     <meta name="Description" content="Title: {{ .Site.Title}}; Author {{ .Site.Params.author }}">
 	{{ if .Params.excerpt }}
     <meta name="description" content="{{ .Params.excerpt }}">
     <meta name="og:description" content="{{ .Params.excerpt }}">
-    <meta name="twitter:description" content="{{ .Params.excerpt }}">
+    <meta name="x:description" content="{{ .Params.excerpt }}">
     <meta itemprop="description" content="{{ .Params.excerpt }}">
 	{{ else }}
     <meta name="description" content="{{ .Summary }}">
     <meta name="og:description" content="{{ .Summary }}">
-    <meta name="twitter:description" content="{{ .Summary }}">
+    <meta name="x:description" content="{{ .Summary }}">
     <meta itemprop="description" content="{{ .Summary }}">
 	{{ end }}
 	{{if .Params.image }}
 	<meta property="og:image" content="{{ .Params.image }}"/>
-	<meta property="twitter:image" content="{{ .Params.image }}"/>
+	<meta property="x:image" content="{{ .Params.image }}"/>
 	<meta itemprop="image" content="{{ .Params.image }}">
 	{{else}}
 		{{if .Site.Params.cover}}
 	<meta property="og:image" content="{{ .Site.BaseURL }}/{{.Site.Params.logo }}"/>
-	<meta property="twitter:image" content="{{ .Site.BaseURL }}/{{.Site.Params.logo }}"/>
+	<meta property="x:image" content="{{ .Site.BaseURL }}/{{.Site.Params.logo }}"/>
 	<meta itemprop="image" content="{{ .Site.BaseURL }}/{{.Site.Params.logo }}">
 		{{end}}
 	{{end}}
